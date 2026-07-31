@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>문장의 형식 — 발음 듣기</title>
+<style>
+  * { box-sizing:border-box; }
+  body { font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif; margin:0;
+         background:#f6faf7; color:#1a1a1a; line-height:1.5; }
+  header { background:#1e5136; color:#fff; padding:14px 16px; position:sticky; top:0; z-index:5; }
+  header h1 { font-size:17px; margin:0; }
+  header p { margin:4px 0 0; font-size:12.5px; opacity:.85; }
+  .rate { margin:6px 0 0; }
+  .rate button { border:1.5px solid #fff; background:transparent; color:#fff; border-radius:14px;
+                 padding:3px 13px; font-size:13px; margin-right:6px; }
+  .rate button.on { background:#fff; color:#1e5136; font-weight:700; }
+  nav { padding:9px 12px; background:#e8f1ec; font-size:14px; line-height:2.1;
+        border-bottom:1px solid #cfdcd4; }
+  nav a { display:inline-block; min-width:34px; text-align:center; background:#fff;
+          border:1px solid #97cba9; border-radius:7px; margin:1px 2px; padding:2px 0;
+          color:#1e5136; text-decoration:none; font-weight:700; }
+  section { padding:14px 14px 4px; max-width:640px; margin:0 auto; }
+  h2 { font-size:15.5px; color:#1e5136; border-left:5px solid #c8891f; padding-left:9px;
+       margin:8px 0 8px; scroll-margin-top:120px; }
+  section { scroll-margin-top:110px; }
+  .setno { background:#1e5136; color:#fff; border-radius:6px; padding:1px 8px; font-size:13px; }
+  .vol { font-weight:400; color:#888; font-size:12px; }
+  ol.list { list-style:none; margin:0; padding:0; background:#fff; border:1px solid #d8e3dc;
+            border-radius:10px; }
+  ol.list li { display:flex; align-items:center; gap:10px; padding:8px 10px;
+               border-bottom:1px dashed #e2eae5; }
+  ol.list li:last-child { border-bottom:none; }
+  .play { flex:none; width:38px; height:38px; border-radius:50%; border:none; background:#1e5136;
+          color:#fff; font-size:14px; }
+  .play.on { background:#c8891f; }
+  .sent { font-size:15px; font-family:Consolas,"Malgun Gothic",monospace; }
+  details { margin:10px 0 0; }
+  summary { font-size:13.5px; color:#a06510; background:#fdf7ec; border:1.5px dashed #c8891f;
+            border-radius:8px; padding:8px 12px; }
+  details ol.list { margin-top:8px; }
+  footer { text-align:center; color:#999; font-size:12px; padding:22px 10px 30px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>문장의 형식 — 발음 듣기</h1>
+  <p>학습지의 QR로 오셨나요? 문장 옆 ▶ 를 누르면 소리가 나요.</p>
+  <div class="rate">
+    빠르기:
+    <button onclick="setRate(0.75,this)">느리게</button><button class="on" onclick="setRate(1.0,this)">보통</button>
+  </div>
+</header>
+<nav><b>세트:</b> <a href="#s1">1</a> <a href="#s2">2</a> <a href="#s3">3</a> <a href="#s4">4</a> <a href="#s5">5</a> <a href="#s6">6</a> <a href="#s7">7</a> <a href="#s8">8</a> <a href="#s9">9</a> <a href="#s10">10</a> <a href="#s11">11</a> <a href="#s12">12</a> <a href="#s13">13</a> <a href="#s14">14</a> <a href="#s15">15</a> <a href="#s16">16</a> <a href="#s17">17</a> <a href="#s18">18</a> <a href="#s19">19</a> <a href="#s20">20</a> <a href="#s21">21</a> <a href="#s22">22</a> <a href="#s23">23</a> <a href="#s24">24</a> <a href="#s25">25</a> <a href="#s26">26</a> <a href="#s27">27</a> <a href="#s28">28</a> <a href="#s29">29</a> <a href="#s30">30</a> <a href="#s31">31</a></nav>
+<section id="s1">
+<h2><span class="setno">세트 1</span> 기본-1 · 1형식 <span class="vol">기본편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="e645906c2807" data-en="Birds sing.">▶</button><span class="sent">Birds sing.</span></li>
+<li><button class="play" onclick="say(this)" data-a="34e919982f67" data-en="Dogs run.">▶</button><span class="sent">Dogs run.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5ec71cbfa988" data-en="The baby cries.">▶</button><span class="sent">The baby cries.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6c9281bec6e5" data-en="Fish swim.">▶</button><span class="sent">Fish swim.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2a10ca768484" data-en="Cats sleep.">▶</button><span class="sent">Cats sleep.</span></li>
+<li><button class="play" onclick="say(this)" data-a="be1cb7e06a72" data-en="The wind blows.">▶</button><span class="sent">The wind blows.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ffb50e20c755" data-en="Rain falls.">▶</button><span class="sent">Rain falls.</span></li>
+<li><button class="play" onclick="say(this)" data-a="7c1e3431521c" data-en="Stars shine.">▶</button><span class="sent">Stars shine.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6ee91ad2d389" data-en="He smiles.">▶</button><span class="sent">He smiles.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6d747898464d" data-en="The bell rings.">▶</button><span class="sent">The bell rings.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e4dfdde24771" data-en="The dog barks.">▶</button><span class="sent">The dog barks.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4c587cb6e5a3" data-en="Bees fly.">▶</button><span class="sent">Bees fly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b2cb04d517ae" data-en="The door opens.">▶</button><span class="sent">The door opens.</span></li>
+<li><button class="play" onclick="say(this)" data-a="0e9a62313945" data-en="Waves crash.">▶</button><span class="sent">Waves crash.</span></li>
+<li><button class="play" onclick="say(this)" data-a="bfc61ca986c8" data-en="Snow falls.">▶</button><span class="sent">Snow falls.</span></li>
+<li><button class="play" onclick="say(this)" data-a="87d723ab9bdb" data-en="My cat jumps.">▶</button><span class="sent">My cat jumps.</span></li>
+<li><button class="play" onclick="say(this)" data-a="afb8a8ba6bca" data-en="Dogs bark.">▶</button><span class="sent">Dogs bark.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="6c3790908cc7" data-en="A bird sings.">▶</button><span class="sent">A bird sings.</span></li>
+</ol></details>
+</section>
+<section id="s2">
+<h2><span class="setno">세트 2</span> 기본-2 · 1형식과 수식어 <span class="vol">기본편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="9711430c698f" data-en="The sun rises in the east.">▶</button><span class="sent">The sun rises in the east.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d4d699f7b3f1" data-en="My dog runs fast.">▶</button><span class="sent">My dog runs fast.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4776b9be94b5" data-en="She walks to school.">▶</button><span class="sent">She walks to school.</span></li>
+<li><button class="play" onclick="say(this)" data-a="42ae452d49c0" data-en="The children play in the park.">▶</button><span class="sent">The children play in the park.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1743e751612f" data-en="Birds fly high.">▶</button><span class="sent">Birds fly high.</span></li>
+<li><button class="play" onclick="say(this)" data-a="658d67477f95" data-en="He sleeps at night.">▶</button><span class="sent">He sleeps at night.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8092fa684ec4" data-en="The train arrives soon.">▶</button><span class="sent">The train arrives soon.</span></li>
+<li><button class="play" onclick="say(this)" data-a="df9ede864b48" data-en="We live in Seoul.">▶</button><span class="sent">We live in Seoul.</span></li>
+<li><button class="play" onclick="say(this)" data-a="bccf48c6fe63" data-en="The flowers grow well.">▶</button><span class="sent">The flowers grow well.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c9c53423be86" data-en="A cat sits on the sofa.">▶</button><span class="sent">A cat sits on the sofa.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4ce1f015a2f8" data-en="Leaves fall in autumn.">▶</button><span class="sent">Leaves fall in autumn.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6746c7fdf6da" data-en="My grandpa walks slowly.">▶</button><span class="sent">My grandpa walks slowly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="24250c6ae667" data-en="The stars shine at night.">▶</button><span class="sent">The stars shine at night.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c70eb349afc4" data-en="We swim in summer.">▶</button><span class="sent">We swim in summer.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5545e6bd228e" data-en="The boy swims fast.">▶</button><span class="sent">The boy swims fast.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6d98faca208c" data-en="Rain falls at night.">▶</button><span class="sent">Rain falls at night.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d832c1a78b4b" data-en="The wind blows softly.">▶</button><span class="sent">The wind blows softly.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="d7415a8f724b" data-en="Birds fly in the sky.">▶</button><span class="sent">Birds fly in the sky.</span></li>
+</ol></details>
+</section>
+<section id="s3">
+<h2><span class="setno">세트 3</span> 기본-3 · 2형식(명사 보어) <span class="vol">기본편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="f004b9994c7c" data-en="She is a doctor.">▶</button><span class="sent">She is a doctor.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4227d7fa29ac" data-en="He is my friend.">▶</button><span class="sent">He is my friend.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8e084037cdc2" data-en="They are students.">▶</button><span class="sent">They are students.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3e1e80c2bb5b" data-en="I am a boy.">▶</button><span class="sent">I am a boy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d98e0cdc5ac3" data-en="This is a book.">▶</button><span class="sent">This is a book.</span></li>
+<li><button class="play" onclick="say(this)" data-a="fd6c0868db3d" data-en="Tom is a singer.">▶</button><span class="sent">Tom is a singer.</span></li>
+<li><button class="play" onclick="say(this)" data-a="7504a7ce3f46" data-en="My mother is a nurse.">▶</button><span class="sent">My mother is a nurse.</span></li>
+<li><button class="play" onclick="say(this)" data-a="79433ab8e7d2" data-en="You are a good cook.">▶</button><span class="sent">You are a good cook.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f5e162d3ae79" data-en="My dad is a driver.">▶</button><span class="sent">My dad is a driver.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1b21666b1caa" data-en="Seoul is a big city.">▶</button><span class="sent">Seoul is a big city.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2cd3d28512d1" data-en="The man is a police officer.">▶</button><span class="sent">The man is a police officer.</span></li>
+<li><button class="play" onclick="say(this)" data-a="76e5db0063a5" data-en="They became doctors.">▶</button><span class="sent">They became doctors.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4a8d026b25e8" data-en="It is a big park.">▶</button><span class="sent">It is a big park.</span></li>
+<li><button class="play" onclick="say(this)" data-a="448817add241" data-en="He is a pilot.">▶</button><span class="sent">He is a pilot.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3ee95fa0c83b" data-en="My sister is a student.">▶</button><span class="sent">My sister is a student.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9cf8c0ff4fd7" data-en="They are twins.">▶</button><span class="sent">They are twins.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="4f336935eafe" data-en="My uncle is a farmer.">▶</button><span class="sent">My uncle is a farmer.</span></li>
+</ol></details>
+</section>
+<section id="s4">
+<h2><span class="setno">세트 4</span> 기본-4 · 2형식(형용사 보어) <span class="vol">기본편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="4964715d95b0" data-en="The soup is hot.">▶</button><span class="sent">The soup is hot.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c8fa5466a79d" data-en="She looks happy.">▶</button><span class="sent">She looks happy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="928054b9d113" data-en="I feel tired.">▶</button><span class="sent">I feel tired.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e59912838010" data-en="The sky is blue.">▶</button><span class="sent">The sky is blue.</span></li>
+<li><button class="play" onclick="say(this)" data-a="782cd623a179" data-en="He is kind.">▶</button><span class="sent">He is kind.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2d96e9f1e039" data-en="The music sounds nice.">▶</button><span class="sent">The music sounds nice.</span></li>
+<li><button class="play" onclick="say(this)" data-a="543770bf3aa9" data-en="The cake tastes sweet.">▶</button><span class="sent">The cake tastes sweet.</span></li>
+<li><button class="play" onclick="say(this)" data-a="41a7dffc0fe9" data-en="They are busy.">▶</button><span class="sent">They are busy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="da53325805a3" data-en="My hands are cold.">▶</button><span class="sent">My hands are cold.</span></li>
+<li><button class="play" onclick="say(this)" data-a="0c654e800650" data-en="The story is funny.">▶</button><span class="sent">The story is funny.</span></li>
+<li><button class="play" onclick="say(this)" data-a="df352b3bf290" data-en="The room is dark.">▶</button><span class="sent">The room is dark.</span></li>
+<li><button class="play" onclick="say(this)" data-a="aae20e9c7066" data-en="This apple tastes sour.">▶</button><span class="sent">This apple tastes sour.</span></li>
+<li><button class="play" onclick="say(this)" data-a="39ca217bda71" data-en="She became famous.">▶</button><span class="sent">She became famous.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ad1cac39bab6" data-en="The room is cold.">▶</button><span class="sent">The room is cold.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d30f093e1619" data-en="The flower looks pretty.">▶</button><span class="sent">The flower looks pretty.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d5a380a99a79" data-en="The sky became dark.">▶</button><span class="sent">The sky became dark.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="3712385b8b44" data-en="The baby looks happy.">▶</button><span class="sent">The baby looks happy.</span></li>
+</ol></details>
+</section>
+<section id="s5">
+<h2><span class="setno">세트 5</span> 기본-5 · 3형식 <span class="vol">기본편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="1db529d1220f" data-en="I like apples.">▶</button><span class="sent">I like apples.</span></li>
+<li><button class="play" onclick="say(this)" data-a="fd7b95a5fed1" data-en="She reads a book.">▶</button><span class="sent">She reads a book.</span></li>
+<li><button class="play" onclick="say(this)" data-a="dc9aff5b435c" data-en="We play soccer.">▶</button><span class="sent">We play soccer.</span></li>
+<li><button class="play" onclick="say(this)" data-a="aa5c70b2e98d" data-en="He eats bread.">▶</button><span class="sent">He eats bread.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e4712563a180" data-en="They watch TV.">▶</button><span class="sent">They watch TV.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e673e786c584" data-en="I love my cat.">▶</button><span class="sent">I love my cat.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1ce6b5ab5748" data-en="She drinks milk.">▶</button><span class="sent">She drinks milk.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9d26f8c95751" data-en="He opens the door.">▶</button><span class="sent">He opens the door.</span></li>
+<li><button class="play" onclick="say(this)" data-a="143da6d13e5d" data-en="We clean the room.">▶</button><span class="sent">We clean the room.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ec36ddc16fa8" data-en="Tom makes a kite.">▶</button><span class="sent">Tom makes a kite.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4b72af6086f3" data-en="We enjoy the game.">▶</button><span class="sent">We enjoy the game.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5fd23a298c5c" data-en="My sister hates spiders.">▶</button><span class="sent">My sister hates spiders.</span></li>
+<li><button class="play" onclick="say(this)" data-a="65e4ae226353" data-en="They built a sandcastle.">▶</button><span class="sent">They built a sandcastle.</span></li>
+<li><button class="play" onclick="say(this)" data-a="68cc87ffda34" data-en="I read books.">▶</button><span class="sent">I read books.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f9c17201cfd7" data-en="She wants a doll.">▶</button><span class="sent">She wants a doll.</span></li>
+<li><button class="play" onclick="say(this)" data-a="99829a03e3fb" data-en="He opens the box.">▶</button><span class="sent">He opens the box.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="5b33f8ed87bd" data-en="They eat pizza.">▶</button><span class="sent">They eat pizza.</span></li>
+</ol></details>
+</section>
+<section id="s6">
+<h2><span class="setno">세트 6</span> 기본-6 · 3형식과 수식어 <span class="vol">기본편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="989e96947cf1" data-en="She sings a song every day.">▶</button><span class="sent">She sings a song every day.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9608f4351155" data-en="I meet my friends on Sunday.">▶</button><span class="sent">I meet my friends on Sunday.</span></li>
+<li><button class="play" onclick="say(this)" data-a="dfc9cd33bb99" data-en="He washes his car in the morning.">▶</button><span class="sent">He washes his car in the morning.</span></li>
+<li><button class="play" onclick="say(this)" data-a="adb8dafdb3df" data-en="We study English at school.">▶</button><span class="sent">We study English at school.</span></li>
+<li><button class="play" onclick="say(this)" data-a="fbc43d980422" data-en="They grow flowers in the garden.">▶</button><span class="sent">They grow flowers in the garden.</span></li>
+<li><button class="play" onclick="say(this)" data-a="01ff61df2ff1" data-en="I keep a diary every night.">▶</button><span class="sent">I keep a diary every night.</span></li>
+<li><button class="play" onclick="say(this)" data-a="adccb85f34e3" data-en="She teaches math at a school.">▶</button><span class="sent">She teaches math at a school.</span></li>
+<li><button class="play" onclick="say(this)" data-a="faff57932beb" data-en="He rides a bike after lunch.">▶</button><span class="sent">He rides a bike after lunch.</span></li>
+<li><button class="play" onclick="say(this)" data-a="69b1c0dd00cb" data-en="We visit our grandmother on weekends.">▶</button><span class="sent">We visit our grandmother on weekends.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3b82ec055524" data-en="The boy throws a ball in the yard.">▶</button><span class="sent">The boy throws a ball in the yard.</span></li>
+<li><button class="play" onclick="say(this)" data-a="108b8a3912a8" data-en="She waters the plants every day.">▶</button><span class="sent">She waters the plants every day.</span></li>
+<li><button class="play" onclick="say(this)" data-a="24c542b5d2ea" data-en="He fixes cars at the shop.">▶</button><span class="sent">He fixes cars at the shop.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b8b737d4d4e8" data-en="We eat lunch at noon.">▶</button><span class="sent">We eat lunch at noon.</span></li>
+<li><button class="play" onclick="say(this)" data-a="08758a04abb8" data-en="The cat chases the mouse in the yard.">▶</button><span class="sent">The cat chases the mouse in the yard.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a4a704bcf4fe" data-en="He draws pictures in class.">▶</button><span class="sent">He draws pictures in class.</span></li>
+<li><button class="play" onclick="say(this)" data-a="679ed6662722" data-en="They watch TV in the evening.">▶</button><span class="sent">They watch TV in the evening.</span></li>
+<li><button class="play" onclick="say(this)" data-a="614b4fd730e6" data-en="I clean my desk every day.">▶</button><span class="sent">I clean my desk every day.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="a2a73b7f0b30" data-en="Mom buys apples.">▶</button><span class="sent">Mom buys apples.</span></li>
+</ol></details>
+</section>
+<section id="s7">
+<h2><span class="setno">세트 7</span> 기본-7 · 3형식 총정리 <span class="vol">기본편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="f96565dc68d8" data-en="Mike drives a truck.">▶</button><span class="sent">Mike drives a truck.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6e5f6b1d082f" data-en="Sarah paints a picture.">▶</button><span class="sent">Sarah paints a picture.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ac9d9ee940ae" data-en="The dog bites the bone.">▶</button><span class="sent">The dog bites the bone.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2918c82ca293" data-en="My sister bakes cookies.">▶</button><span class="sent">My sister bakes cookies.</span></li>
+<li><button class="play" onclick="say(this)" data-a="48520a05ac90" data-en="The farmer feeds the cows.">▶</button><span class="sent">The farmer feeds the cows.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3e929e3b268e" data-en="Kids fly kites.">▶</button><span class="sent">Kids fly kites.</span></li>
+<li><button class="play" onclick="say(this)" data-a="59389acb6c40" data-en="The chef cooks dinner.">▶</button><span class="sent">The chef cooks dinner.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f53e7117f2cd" data-en="She carries a bag.">▶</button><span class="sent">She carries a bag.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6a43574a5f0d" data-en="He fixes the clock.">▶</button><span class="sent">He fixes the clock.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d2684630729a" data-en="They build a house.">▶</button><span class="sent">They build a house.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4919dbabab86" data-en="The baker sells bread.">▶</button><span class="sent">The baker sells bread.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2683d7f5c26e" data-en="We plant a tree.">▶</button><span class="sent">We plant a tree.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ef6a7681b883" data-en="The artist draws a map.">▶</button><span class="sent">The artist draws a map.</span></li>
+<li><button class="play" onclick="say(this)" data-a="7552d15ff174" data-en="She rides a horse.">▶</button><span class="sent">She rides a horse.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a3726ba3a6da" data-en="The cook makes soup.">▶</button><span class="sent">The cook makes soup.</span></li>
+<li><button class="play" onclick="say(this)" data-a="19f66b2c713a" data-en="Kids ride bikes.">▶</button><span class="sent">Kids ride bikes.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a01aa55c15f3" data-en="Tom washes his hands.">▶</button><span class="sent">Tom washes his hands.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="b790aa40e042" data-en="She draws a picture.">▶</button><span class="sent">She draws a picture.</span></li>
+</ol></details>
+</section>
+<section id="s8">
+<h2><span class="setno">세트 8</span> 기본-8 · 4형식 <span class="vol">기본편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="290d6ded55fe" data-en="She gives me a book.">▶</button><span class="sent">She gives me a book.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2689b83b7f44" data-en="He sends her a letter.">▶</button><span class="sent">He sends her a letter.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c288b96e0233" data-en="I buy him a gift.">▶</button><span class="sent">I buy him a gift.</span></li>
+<li><button class="play" onclick="say(this)" data-a="042751bd605a" data-en="Mom makes us dinner.">▶</button><span class="sent">Mom makes us dinner.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2ffce7c87f28" data-en="The teacher tells them a story.">▶</button><span class="sent">The teacher tells them a story.</span></li>
+<li><button class="play" onclick="say(this)" data-a="381600d8f200" data-en="He shows me a photo.">▶</button><span class="sent">He shows me a photo.</span></li>
+<li><button class="play" onclick="say(this)" data-a="26222cb90e53" data-en="She teaches us English.">▶</button><span class="sent">She teaches us English.</span></li>
+<li><button class="play" onclick="say(this)" data-a="7f7c21541282" data-en="Dad brings me water.">▶</button><span class="sent">Dad brings me water.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d8bb3438ff01" data-en="They offer him a job.">▶</button><span class="sent">They offer him a job.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d6212e95ffc9" data-en="I lend her a pen.">▶</button><span class="sent">I lend her a pen.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5beba954b978" data-en="He sends me a card.">▶</button><span class="sent">He sends me a card.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a3f91e14a94b" data-en="Mom made us pizza.">▶</button><span class="sent">Mom made us pizza.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9a2821ac7ea9" data-en="Dad gave me a watch.">▶</button><span class="sent">Dad gave me a watch.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="cb0abd7435de" data-en="She told us a story.">▶</button><span class="sent">She told us a story.</span></li>
+</ol></details>
+</section>
+<section id="s9">
+<h2><span class="setno">세트 9</span> 기본-9 · 4형식 <span class="vol">기본편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="4fdc5cfdd4eb" data-en="Grandma cooks me soup.">▶</button><span class="sent">Grandma cooks me soup.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8151f5a9cbb1" data-en="He passes her the salt.">▶</button><span class="sent">He passes her the salt.</span></li>
+<li><button class="play" onclick="say(this)" data-a="cd31758b3a32" data-en="The waiter brings us the menu.">▶</button><span class="sent">The waiter brings us the menu.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ec055aea6ac1" data-en="She writes him a card.">▶</button><span class="sent">She writes him a card.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c16ef2352be1" data-en="I give my brother a comic.">▶</button><span class="sent">I give my brother a comic.</span></li>
+<li><button class="play" onclick="say(this)" data-a="04b3ba10faab" data-en="They send us a package.">▶</button><span class="sent">They send us a package.</span></li>
+<li><button class="play" onclick="say(this)" data-a="71df513f5bf8" data-en="He hands me a towel.">▶</button><span class="sent">He hands me a towel.</span></li>
+<li><button class="play" onclick="say(this)" data-a="22ddde5fb13e" data-en="Mom buys my brother shoes.">▶</button><span class="sent">Mom buys my brother shoes.</span></li>
+<li><button class="play" onclick="say(this)" data-a="32fcaeabac49" data-en="The coach shows them a trick.">▶</button><span class="sent">The coach shows them a trick.</span></li>
+<li><button class="play" onclick="say(this)" data-a="12449b07b24a" data-en="She tells the kids a joke.">▶</button><span class="sent">She tells the kids a joke.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a554eadb3cea" data-en="The nurse gives him medicine.">▶</button><span class="sent">The nurse gives him medicine.</span></li>
+<li><button class="play" onclick="say(this)" data-a="83f017f44dd7" data-en="We show the guests the room.">▶</button><span class="sent">We show the guests the room.</span></li>
+<li><button class="play" onclick="say(this)" data-a="fc6c96f2d2bf" data-en="The teacher gave us candy.">▶</button><span class="sent">The teacher gave us candy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6f48209b1269" data-en="She showed me her cat.">▶</button><span class="sent">She showed me her cat.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1b58a2bfbbcd" data-en="I sent her flowers.">▶</button><span class="sent">I sent her flowers.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="8479ad4dee97" data-en="She brought me juice.">▶</button><span class="sent">She brought me juice.</span></li>
+</ol></details>
+</section>
+<section id="s10">
+<h2><span class="setno">세트 10</span> 기본-10 · 4형식 <span class="vol">기본편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="3b2b2260455f" data-en="The farmer gives us eggs.">▶</button><span class="sent">The farmer gives us eggs.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1196f4b6bdf2" data-en="My friend lends me money.">▶</button><span class="sent">My friend lends me money.</span></li>
+<li><button class="play" onclick="say(this)" data-a="0a425994119b" data-en="She reads her baby a book.">▶</button><span class="sent">She reads her baby a book.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4257b0fa0c7e" data-en="He gives the bird some seeds.">▶</button><span class="sent">He gives the bird some seeds.</span></li>
+<li><button class="play" onclick="say(this)" data-a="451cac5b3c3a" data-en="I make my mom a card.">▶</button><span class="sent">I make my mom a card.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ed1a18ac9803" data-en="They serve guests tea.">▶</button><span class="sent">They serve guests tea.</span></li>
+<li><button class="play" onclick="say(this)" data-a="0b3d1f468bc1" data-en="The nurse brings him medicine.">▶</button><span class="sent">The nurse brings him medicine.</span></li>
+<li><button class="play" onclick="say(this)" data-a="94d7f2e89aae" data-en="She teaches me a song.">▶</button><span class="sent">She teaches me a song.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3a90f35fef68" data-en="He tells us the news.">▶</button><span class="sent">He tells us the news.</span></li>
+<li><button class="play" onclick="say(this)" data-a="37671c43401d" data-en="Dad buys us ice cream.">▶</button><span class="sent">Dad buys us ice cream.</span></li>
+<li><button class="play" onclick="say(this)" data-a="94a7497978a2" data-en="We bring them lunch.">▶</button><span class="sent">We bring them lunch.</span></li>
+<li><button class="play" onclick="say(this)" data-a="301474f3a263" data-en="I lend my friend a book.">▶</button><span class="sent">I lend my friend a book.</span></li>
+<li><button class="play" onclick="say(this)" data-a="065a04bbd881" data-en="Grandpa tells me stories.">▶</button><span class="sent">Grandpa tells me stories.</span></li>
+<li><button class="play" onclick="say(this)" data-a="32a307b92903" data-en="She shows us the way.">▶</button><span class="sent">She shows us the way.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1642ac948b10" data-en="Grandma made me socks.">▶</button><span class="sent">Grandma made me socks.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3363eedfe927" data-en="He lent us his car.">▶</button><span class="sent">He lent us his car.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d218d4ea42d6" data-en="The clerk sold me a hat.">▶</button><span class="sent">The clerk sold me a hat.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="ea298fef6870" data-en="She taught us a song.">▶</button><span class="sent">She taught us a song.</span></li>
+</ol></details>
+</section>
+<section id="s11">
+<h2><span class="setno">세트 11</span> 기본-11 · 5형식(이름·신분 보어) <span class="vol">기본편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="19d87ee5fb74" data-en="We call him Tom.">▶</button><span class="sent">We call him Tom.</span></li>
+<li><button class="play" onclick="say(this)" data-a="973707b5f30a" data-en="They named the baby Sena.">▶</button><span class="sent">They named the baby Sena.</span></li>
+<li><button class="play" onclick="say(this)" data-a="09909224c6ef" data-en="People call New York the Big Apple.">▶</button><span class="sent">People call New York the Big Apple.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9c9412d3a568" data-en="We made her class president.">▶</button><span class="sent">We made her class president.</span></li>
+<li><button class="play" onclick="say(this)" data-a="08da62cf1d5b" data-en="They call the dog Coco.">▶</button><span class="sent">They call the dog Coco.</span></li>
+<li><button class="play" onclick="say(this)" data-a="01cc2aa52774" data-en="The team made him captain.">▶</button><span class="sent">The team made him captain.</span></li>
+<li><button class="play" onclick="say(this)" data-a="227172fa28ef" data-en="We named our cat Nabi.">▶</button><span class="sent">We named our cat Nabi.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ddac625bb15b" data-en="They call the boy a genius.">▶</button><span class="sent">They call the boy a genius.</span></li>
+<li><button class="play" onclick="say(this)" data-a="799cb2c5e583" data-en="She calls me her best friend.">▶</button><span class="sent">She calls me her best friend.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ddbca2620ad3" data-en="They call the puppy Lucky.">▶</button><span class="sent">They call the puppy Lucky.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ddca7763459b" data-en="The club made me a member.">▶</button><span class="sent">The club made me a member.</span></li>
+<li><button class="play" onclick="say(this)" data-a="57c22855c592" data-en="We call her Mina.">▶</button><span class="sent">We call her Mina.</span></li>
+<li><button class="play" onclick="say(this)" data-a="45d0d44b9e2d" data-en="They named the boat Star.">▶</button><span class="sent">They named the boat Star.</span></li>
+<li><button class="play" onclick="say(this)" data-a="43e13863071c" data-en="The class chose her leader.">▶</button><span class="sent">The class chose her leader.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="0ca01d40b914" data-en="She named the cat Tiger.">▶</button><span class="sent">She named the cat Tiger.</span></li>
+</ol></details>
+</section>
+<section id="s12">
+<h2><span class="setno">세트 12</span> 기본-12 · 5형식(상태 보어) <span class="vol">기본편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="8fd06cc457c8" data-en="The news made me happy.">▶</button><span class="sent">The news made me happy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f714b12e7bdf" data-en="She keeps the room clean.">▶</button><span class="sent">She keeps the room clean.</span></li>
+<li><button class="play" onclick="say(this)" data-a="89ca20aeb3fb" data-en="The soup made me full.">▶</button><span class="sent">The soup made me full.</span></li>
+<li><button class="play" onclick="say(this)" data-a="98528f990009" data-en="We found the test easy.">▶</button><span class="sent">We found the test easy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="661bcc34e62c" data-en="The rain made the ground wet.">▶</button><span class="sent">The rain made the ground wet.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3783824fc14c" data-en="He painted the wall blue.">▶</button><span class="sent">He painted the wall blue.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d280774c689c" data-en="The trip made us tired.">▶</button><span class="sent">The trip made us tired.</span></li>
+<li><button class="play" onclick="say(this)" data-a="06303ae3ae5a" data-en="I found the story sad.">▶</button><span class="sent">I found the story sad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="04e884c8e79e" data-en="The music made her calm.">▶</button><span class="sent">The music made her calm.</span></li>
+<li><button class="play" onclick="say(this)" data-a="559a5a877e31" data-en="Exercise keeps you healthy.">▶</button><span class="sent">Exercise keeps you healthy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8d6ece7e4b63" data-en="He found the box empty.">▶</button><span class="sent">He found the box empty.</span></li>
+<li><button class="play" onclick="say(this)" data-a="dc1e6cd07f35" data-en="The rain made us wet.">▶</button><span class="sent">The rain made us wet.</span></li>
+<li><button class="play" onclick="say(this)" data-a="51bf2df5e1b3" data-en="Music makes me sleepy.">▶</button><span class="sent">Music makes me sleepy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a7c430028597" data-en="The news made her sad.">▶</button><span class="sent">The news made her sad.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="35e9bbe555ef" data-en="He keeps the soup warm.">▶</button><span class="sent">He keeps the soup warm.</span></li>
+</ol></details>
+</section>
+<section id="s13">
+<h2><span class="setno">세트 13</span> 기본-13 · 5형식 총정리 <span class="vol">기본편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="fdc7a4afb498" data-en="We call him a hero.">▶</button><span class="sent">We call him a hero.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b968a4b3888f" data-en="They keep the door open.">▶</button><span class="sent">They keep the door open.</span></li>
+<li><button class="play" onclick="say(this)" data-a="57f8d7931fc0" data-en="The blanket keeps us warm.">▶</button><span class="sent">The blanket keeps us warm.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ca5ea84f3358" data-en="They painted the gate red.">▶</button><span class="sent">They painted the gate red.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ce82919eda14" data-en="Loud noise made the baby upset.">▶</button><span class="sent">Loud noise made the baby upset.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e8d28716c630" data-en="The coach made him a star.">▶</button><span class="sent">The coach made him a star.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1db21a96f4f8" data-en="She calls the cat Milk.">▶</button><span class="sent">She calls the cat Milk.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3c8f3e08af79" data-en="The gift made her glad.">▶</button><span class="sent">The gift made her glad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d95cf9de92e6" data-en="We found the seat empty.">▶</button><span class="sent">We found the seat empty.</span></li>
+<li><button class="play" onclick="say(this)" data-a="77164ef34eae" data-en="Hard work made them rich.">▶</button><span class="sent">Hard work made them rich.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c3306246c87c" data-en="She found the movie boring.">▶</button><span class="sent">She found the movie boring.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5ba370f853d4" data-en="Good food makes us strong.">▶</button><span class="sent">Good food makes us strong.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5f5348e15893" data-en="The movie made him bored.">▶</button><span class="sent">The movie made him bored.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="1878dba9125c" data-en="My friends call me Sunny.">▶</button><span class="sent">My friends call me Sunny.</span></li>
+</ol></details>
+</section>
+<section id="s14">
+<h2><span class="setno">세트 14</span> 기본-14 · 이 책에서 배우는 4형식 동사의 3형식 전환 <span class="vol">기본편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="bd72fc0bd1f8" data-en="She gave me a book.">▶</button><span class="sent">She gave me a book.</span></li>
+<li><button class="play" onclick="say(this)" data-a="19868932a29f" data-en="Mom made us dinner.">▶</button><span class="sent">Mom made us dinner.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2c44cea9994a" data-en="He showed her a photo.">▶</button><span class="sent">He showed her a photo.</span></li>
+<li><button class="play" onclick="say(this)" data-a="bccc977d5e8b" data-en="Dad bought me a bike.">▶</button><span class="sent">Dad bought me a bike.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8038243a2ffd" data-en="She teaches us science.">▶</button><span class="sent">She teaches us science.</span></li>
+<li><button class="play" onclick="say(this)" data-a="96467eed7519" data-en="He cooked them lunch.">▶</button><span class="sent">He cooked them lunch.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5ddf2935ed46" data-en="I sent her a card.">▶</button><span class="sent">I sent her a card.</span></li>
+<li><button class="play" onclick="say(this)" data-a="7163908eaef4" data-en="She bought him a hat.">▶</button><span class="sent">She bought him a hat.</span></li>
+<li><button class="play" onclick="say(this)" data-a="80b88886cfbd" data-en="He told me a story.">▶</button><span class="sent">He told me a story.</span></li>
+<li><button class="play" onclick="say(this)" data-a="407a23bc0a22" data-en="Grandma made me a doll.">▶</button><span class="sent">Grandma made me a doll.</span></li>
+<li><button class="play" onclick="say(this)" data-a="7cef0cf07897" data-en="She showed him the map.">▶</button><span class="sent">She showed him the map.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 15개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="110d6c534e3d" data-en="She gave a book to me.">▶</button><span class="sent">She gave a book to me.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b46a87683a21" data-en="He sent a letter to her.">▶</button><span class="sent">He sent a letter to her.</span></li>
+<li><button class="play" onclick="say(this)" data-a="655f1d198196" data-en="Mom made a cake for us.">▶</button><span class="sent">Mom made a cake for us.</span></li>
+<li><button class="play" onclick="say(this)" data-a="402f93843ebc" data-en="I showed my photo to him.">▶</button><span class="sent">I showed my photo to him.</span></li>
+<li><button class="play" onclick="say(this)" data-a="addd55fde1f6" data-en="Dad bought new shoes for me.">▶</button><span class="sent">Dad bought new shoes for me.</span></li>
+<li><button class="play" onclick="say(this)" data-a="0c527bb70b6e" data-en="She teaches English to us.">▶</button><span class="sent">She teaches English to us.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3c154aab9c24" data-en="He cooked dinner for them.">▶</button><span class="sent">He cooked dinner for them.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2c492eddb5b0" data-en="I lent my pen to her.">▶</button><span class="sent">I lent my pen to her.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8b10c7bd3a5c" data-en="She got a ticket for him.">▶</button><span class="sent">She got a ticket for him.</span></li>
+<li><button class="play" onclick="say(this)" data-a="843c7346e743" data-en="He passed the salt to me.">▶</button><span class="sent">He passed the salt to me.</span></li>
+<li><button class="play" onclick="say(this)" data-a="96567cc67dc2" data-en="I sent a card to her.">▶</button><span class="sent">I sent a card to her.</span></li>
+<li><button class="play" onclick="say(this)" data-a="18eaddf9dedc" data-en="She bought a hat for him.">▶</button><span class="sent">She bought a hat for him.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6e7258276e1c" data-en="He told a story to me.">▶</button><span class="sent">He told a story to me.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a6ae0991777d" data-en="Grandma made a doll for me.">▶</button><span class="sent">Grandma made a doll for me.</span></li>
+<li><button class="play" onclick="say(this)" data-a="81f5450cbf4e" data-en="She bought a cake for me.">▶</button><span class="sent">She bought a cake for me.</span></li>
+</ol></details>
+</section>
+<section id="s15">
+<h2><span class="setno">세트 15</span> 혼합 기초 ① <span class="vol">실전편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="dfbbc4284748" data-en="He gave me a pen.">▶</button><span class="sent">He gave me a pen.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c4c55606e175" data-en="The news made me sad.">▶</button><span class="sent">The news made me sad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="62f6955a5e4a" data-en="She sent him a card.">▶</button><span class="sent">She sent him a card.</span></li>
+<li><button class="play" onclick="say(this)" data-a="7c1e3431521c" data-en="Stars shine.">▶</button><span class="sent">Stars shine.</span></li>
+<li><button class="play" onclick="say(this)" data-a="314720fd8663" data-en="I like pizza.">▶</button><span class="sent">I like pizza.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d4e2ff18e1b1" data-en="He is a teacher.">▶</button><span class="sent">He is a teacher.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9733b06aa5c5" data-en="Birds fly.">▶</button><span class="sent">Birds fly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3c277cc00033" data-en="You are smart.">▶</button><span class="sent">You are smart.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5868d4180f16" data-en="Mom made me soup.">▶</button><span class="sent">Mom made me soup.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d62d8268a2d2" data-en="The baby sleeps.">▶</button><span class="sent">The baby sleeps.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c04a5ce8fcb7" data-en="They named the cat Coco.">▶</button><span class="sent">They named the cat Coco.</span></li>
+<li><button class="play" onclick="say(this)" data-a="afb8a8ba6bca" data-en="Dogs bark.">▶</button><span class="sent">Dogs bark.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f24d7d4fb5f5" data-en="She reads books.">▶</button><span class="sent">She reads books.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6cab3c11d9cb" data-en="We call him Sam.">▶</button><span class="sent">We call him Sam.</span></li>
+<li><button class="play" onclick="say(this)" data-a="47b7612628fd" data-en="We play games.">▶</button><span class="sent">We play games.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f81c815542a9" data-en="She is happy.">▶</button><span class="sent">She is happy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a3143d4b8b1a" data-en="My uncle bought me a kite.">▶</button><span class="sent">My uncle bought me a kite.</span></li>
+<li><button class="play" onclick="say(this)" data-a="453aad3be965" data-en="The tall boy runs fast.">▶</button><span class="sent">The tall boy runs fast.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2c14ccd77a62" data-en="They found the movie boring.">▶</button><span class="sent">They found the movie boring.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="3362161e9196" data-en="My aunt is a nurse.">▶</button><span class="sent">My aunt is a nurse.</span></li>
+</ol></details>
+</section>
+<section id="s16">
+<h2><span class="setno">세트 16</span> 혼합 기초 ② <span class="vol">실전편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="a731bc221177" data-en="It looks nice.">▶</button><span class="sent">It looks nice.</span></li>
+<li><button class="play" onclick="say(this)" data-a="559ca7df937d" data-en="The sun shines.">▶</button><span class="sent">The sun shines.</span></li>
+<li><button class="play" onclick="say(this)" data-a="bce932d5a42e" data-en="The joke made us happy.">▶</button><span class="sent">The joke made us happy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="be1cb7e06a72" data-en="The wind blows.">▶</button><span class="sent">The wind blows.</span></li>
+<li><button class="play" onclick="say(this)" data-a="7b9eec7fa1e5" data-en="I open the window.">▶</button><span class="sent">I open the window.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6c9281bec6e5" data-en="Fish swim.">▶</button><span class="sent">Fish swim.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ffc6bf832d4e" data-en="They are kind.">▶</button><span class="sent">They are kind.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5c7e3921c6a4" data-en="We call him a star.">▶</button><span class="sent">We call him a star.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a16e3e45850d" data-en="Dad buys me shoes.">▶</button><span class="sent">Dad buys me shoes.</span></li>
+<li><button class="play" onclick="say(this)" data-a="29682fba1e90" data-en="She is a nurse.">▶</button><span class="sent">She is a nurse.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2e5a4e3202e6" data-en="He runs.">▶</button><span class="sent">He runs.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4fdc5cfdd4eb" data-en="Grandma cooks me soup.">▶</button><span class="sent">Grandma cooks me soup.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c51b9bbd9eb0" data-en="We watch TV.">▶</button><span class="sent">We watch TV.</span></li>
+<li><button class="play" onclick="say(this)" data-a="45db37bbf755" data-en="The rain made the street wet.">▶</button><span class="sent">The rain made the street wet.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1ce6b5ab5748" data-en="She drinks milk.">▶</button><span class="sent">She drinks milk.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8a0a4bd844ee" data-en="He tells me a secret.">▶</button><span class="sent">He tells me a secret.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ac79af4fa4ed" data-en="The nurse gave the boy a blanket.">▶</button><span class="sent">The nurse gave the boy a blanket.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6cae8eb52f9a" data-en="The old man walks slowly.">▶</button><span class="sent">The old man walks slowly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="708494b09757" data-en="The coach made the team strong.">▶</button><span class="sent">The coach made the team strong.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="e2acdf421945" data-en="My brother opens the window.">▶</button><span class="sent">My brother opens the window.</span></li>
+</ol></details>
+</section>
+<section id="s17">
+<h2><span class="setno">세트 17</span> 혼합 기초 ③ <span class="vol">실전편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="830315a6697f" data-en="A bird sits on the roof.">▶</button><span class="sent">A bird sits on the roof.</span></li>
+<li><button class="play" onclick="say(this)" data-a="483f0b8e6684" data-en="She reads a book at night.">▶</button><span class="sent">She reads a book at night.</span></li>
+<li><button class="play" onclick="say(this)" data-a="74d03d7e1ff2" data-en="The birds sing in the morning.">▶</button><span class="sent">The birds sing in the morning.</span></li>
+<li><button class="play" onclick="say(this)" data-a="13c72e6428ca" data-en="I sent my aunt a card yesterday.">▶</button><span class="sent">I sent my aunt a card yesterday.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6e358325933e" data-en="The children play outside.">▶</button><span class="sent">The children play outside.</span></li>
+<li><button class="play" onclick="say(this)" data-a="0728603afabf" data-en="The long trip made them very tired.">▶</button><span class="sent">The long trip made them very tired.</span></li>
+<li><button class="play" onclick="say(this)" data-a="832e2ff8d63a" data-en="He showed us his new phone.">▶</button><span class="sent">He showed us his new phone.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3bf7b84efa43" data-en="My soup is still hot.">▶</button><span class="sent">My soup is still hot.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a8c092359044" data-en="He drinks coffee every morning.">▶</button><span class="sent">He drinks coffee every morning.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d561831a5a3d" data-en="She gave the poor man some food.">▶</button><span class="sent">She gave the poor man some food.</span></li>
+<li><button class="play" onclick="say(this)" data-a="278bc0c44092" data-en="The dog runs in the park.">▶</button><span class="sent">The dog runs in the park.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6bb764d4e676" data-en="The flowers smell sweet today.">▶</button><span class="sent">The flowers smell sweet today.</span></li>
+<li><button class="play" onclick="say(this)" data-a="13f0d8c63cc7" data-en="We call our teacher Mr. Kim.">▶</button><span class="sent">We call our teacher Mr. Kim.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ff1711f0f592" data-en="He is very tall.">▶</button><span class="sent">He is very tall.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c93cf2e08308" data-en="The rain made the field muddy.">▶</button><span class="sent">The rain made the field muddy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4ec6f998473d" data-en="She meets her friend at the mall.">▶</button><span class="sent">She meets her friend at the mall.</span></li>
+<li><button class="play" onclick="say(this)" data-a="0437e0eff8da" data-en="Her smile made the class happy.">▶</button><span class="sent">Her smile made the class happy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b2614d120d9b" data-en="On rainy days, the road looks dark.">▶</button><span class="sent">On rainy days, the road looks dark.</span></li>
+<li><button class="play" onclick="say(this)" data-a="dc979f7661b4" data-en="The heavy snow fell all night.">▶</button><span class="sent">The heavy snow fell all night.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="9faf867ab04a" data-en="My pen pal wrote me a letter.">▶</button><span class="sent">My pen pal wrote me a letter.</span></li>
+</ol></details>
+</section>
+<section id="s18">
+<h2><span class="setno">세트 18</span> 빈칸·품사 <span class="vol">실전편</span></h2>
+<ol class="list">
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 20개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="c1f2593781a7" data-en="I like apples .">▶</button><span class="sent">I like apples .</span></li>
+<li><button class="play" onclick="say(this)" data-a="209ca6d7ae66" data-en="The flower smells sweet .">▶</button><span class="sent">The flower smells sweet .</span></li>
+<li><button class="play" onclick="say(this)" data-a="455bc02e5e2f" data-en="We call him a hero .">▶</button><span class="sent">We call him a hero .</span></li>
+<li><button class="play" onclick="say(this)" data-a="5e64e6d26d21" data-en="She sings beautifully .">▶</button><span class="sent">She sings beautifully .</span></li>
+<li><button class="play" onclick="say(this)" data-a="78c34ade9cfa" data-en="She is a doctor .">▶</button><span class="sent">She is a doctor .</span></li>
+<li><button class="play" onclick="say(this)" data-a="d39143889569" data-en="This is a pen .">▶</button><span class="sent">This is a pen .</span></li>
+<li><button class="play" onclick="say(this)" data-a="a69c5af3a4e0" data-en="She keeps her room clean .">▶</button><span class="sent">She keeps her room clean .</span></li>
+<li><button class="play" onclick="say(this)" data-a="89953f2f9c5b" data-en="The news made me happy .">▶</button><span class="sent">The news made me happy .</span></li>
+<li><button class="play" onclick="say(this)" data-a="fb10f32a0b75" data-en="He looks tired .">▶</button><span class="sent">He looks tired .</span></li>
+<li><button class="play" onclick="say(this)" data-a="0a12b41091f3" data-en="The soup smells nice .">▶</button><span class="sent">The soup smells nice .</span></li>
+<li><button class="play" onclick="say(this)" data-a="b7670b56bdfa" data-en="He gave me a book .">▶</button><span class="sent">He gave me a book .</span></li>
+<li><button class="play" onclick="say(this)" data-a="e6e8fbf62e31" data-en="She looks sad .">▶</button><span class="sent">She looks sad .</span></li>
+<li><button class="play" onclick="say(this)" data-a="9f4fe8bbee7f" data-en="She became famous .">▶</button><span class="sent">She became famous .</span></li>
+<li><button class="play" onclick="say(this)" data-a="f631897a3498" data-en="He runs quickly .">▶</button><span class="sent">He runs quickly .</span></li>
+<li><button class="play" onclick="say(this)" data-a="90a3f5ab97e6" data-en="The baby cried loudly .">▶</button><span class="sent">The baby cried loudly .</span></li>
+<li><button class="play" onclick="say(this)" data-a="da072a58a5f3" data-en="We play soccer after school.">▶</button><span class="sent">We play soccer after school.</span></li>
+<li><button class="play" onclick="say(this)" data-a="703f9080e754" data-en="The soup tastes good .">▶</button><span class="sent">The soup tastes good .</span></li>
+<li><button class="play" onclick="say(this)" data-a="d5c5dda60286" data-en="He answered kindly .">▶</button><span class="sent">He answered kindly .</span></li>
+<li><button class="play" onclick="say(this)" data-a="8bee29c834b2" data-en="She became a pilot .">▶</button><span class="sent">She became a pilot .</span></li>
+<li><button class="play" onclick="say(this)" data-a="0b5d7a290a77" data-en="They keep the room clean .">▶</button><span class="sent">They keep the room clean .</span></li>
+</ol></details>
+</section>
+<section id="s19">
+<h2><span class="setno">세트 19</span> 동사 집중 — make <span class="vol">실전편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="7b2fd55935fd" data-en="Mom makes my sister a dress.">▶</button><span class="sent">Mom makes my sister a dress.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a6544b528f3d" data-en="We make paper boats.">▶</button><span class="sent">We make paper boats.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8257c6eb420c" data-en="Dad makes me a sandwich.">▶</button><span class="sent">Dad makes me a sandwich.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6fddcf5b3b54" data-en="She makes me happy.">▶</button><span class="sent">She makes me happy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="96003e09903a" data-en="He makes us lunch.">▶</button><span class="sent">He makes us lunch.</span></li>
+<li><button class="play" onclick="say(this)" data-a="61c07b28eaae" data-en="The letter made her glad.">▶</button><span class="sent">The letter made her glad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9c29ec5f7be4" data-en="They make noise.">▶</button><span class="sent">They make noise.</span></li>
+<li><button class="play" onclick="say(this)" data-a="59cc7614d5bc" data-en="The joke made everyone happy.">▶</button><span class="sent">The joke made everyone happy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c73527efbf57" data-en="She makes tea.">▶</button><span class="sent">She makes tea.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3848e54b9064" data-en="He made his son a kite.">▶</button><span class="sent">He made his son a kite.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8d5fe76fd088" data-en="They make toys.">▶</button><span class="sent">They make toys.</span></li>
+<li><button class="play" onclick="say(this)" data-a="39a5f5615c49" data-en="Hard work made him strong.">▶</button><span class="sent">Hard work made him strong.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8353a934a54c" data-en="She makes me cookies.">▶</button><span class="sent">She makes me cookies.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6124762996e5" data-en="He makes a robot.">▶</button><span class="sent">He makes a robot.</span></li>
+<li><button class="play" onclick="say(this)" data-a="916a5be10372" data-en="The film makes us sad.">▶</button><span class="sent">The film makes us sad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e3680e81acf1" data-en="She makes cookies.">▶</button><span class="sent">She makes cookies.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c75d235bd02b" data-en="The chef made us a salad.">▶</button><span class="sent">The chef made us a salad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1dc866c3bae2" data-en="The joke made the baby laugh.">▶</button><span class="sent">The joke made the baby laugh.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 2개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="ffaf3efd0efb" data-en="He made a paper boat.">▶</button><span class="sent">He made a paper boat.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b0dda7688c50" data-en="The letter made me sad.">▶</button><span class="sent">The letter made me sad.</span></li>
+</ol></details>
+</section>
+<section id="s20">
+<h2><span class="setno">세트 20</span> 함정 구별 <span class="vol">실전편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="135a5816086b" data-en="I found a coin.">▶</button><span class="sent">I found a coin.</span></li>
+<li><button class="play" onclick="say(this)" data-a="704488d6b349" data-en="Fresh air keeps us healthy.">▶</button><span class="sent">Fresh air keeps us healthy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2aa0d9fe9244" data-en="The long walk made me tired.">▶</button><span class="sent">The long walk made me tired.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b7ab2436b2ab" data-en="She calls me a taxi.">▶</button><span class="sent">She calls me a taxi.</span></li>
+<li><button class="play" onclick="say(this)" data-a="0079812059a0" data-en="We got a letter.">▶</button><span class="sent">We got a letter.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9a2111c5ec63" data-en="I found him honest.">▶</button><span class="sent">I found him honest.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c7471a7177f0" data-en="He keeps the money.">▶</button><span class="sent">He keeps the money.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9d03a92706a2" data-en="He got me a ticket.">▶</button><span class="sent">He got me a ticket.</span></li>
+<li><button class="play" onclick="say(this)" data-a="59a5d9cf9c15" data-en="They call the baby Mia.">▶</button><span class="sent">They call the baby Mia.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e1d600a46b1e" data-en="I get you a drink.">▶</button><span class="sent">I get you a drink.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1e757d4a3d50" data-en="The scarf keeps me warm.">▶</button><span class="sent">The scarf keeps me warm.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ad468fe5a097" data-en="She keeps a diary.">▶</button><span class="sent">She keeps a diary.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ea1fe351fcdd" data-en="He found the door open.">▶</button><span class="sent">He found the door open.</span></li>
+<li><button class="play" onclick="say(this)" data-a="0d19670393c3" data-en="She calls a taxi.">▶</button><span class="sent">She calls a taxi.</span></li>
+<li><button class="play" onclick="say(this)" data-a="0e1ddbb112d9" data-en="She calls me a hero.">▶</button><span class="sent">She calls me a hero.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4a62aaf55236" data-en="I found him a coin.">▶</button><span class="sent">I found him a coin.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b963ec9d83dd" data-en="She calls me a leader.">▶</button><span class="sent">She calls me a leader.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d14e336ccb7c" data-en="She bought me a hat.">▶</button><span class="sent">She bought me a hat.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d6057ccdece3" data-en="We found the puzzle easy.">▶</button><span class="sent">We found the puzzle easy.</span></li>
+</ol>
+</section>
+<section id="s21">
+<h2><span class="setno">세트 21</span> 다른 형식 찾기 <span class="vol">실전편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="6513f1c2b338" data-en="We play badminton.">▶</button><span class="sent">We play badminton.</span></li>
+<li><button class="play" onclick="say(this)" data-a="98d5a614b073" data-en="Puppies sleep.">▶</button><span class="sent">Puppies sleep.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9d5d37738c4f" data-en="I like grapes.">▶</button><span class="sent">I like grapes.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f24d7d4fb5f5" data-en="She reads books.">▶</button><span class="sent">She reads books.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c9d624260e74" data-en="He eats noodles.">▶</button><span class="sent">He eats noodles.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f1c900d5228a" data-en="We call her Ann.">▶</button><span class="sent">We call her Ann.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b54969e4da3a" data-en="I buy her a scarf.">▶</button><span class="sent">I buy her a scarf.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5b6139f03b1c" data-en="She gave me a pen.">▶</button><span class="sent">She gave me a pen.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e35db18019f0" data-en="He sent her a card.">▶</button><span class="sent">He sent her a card.</span></li>
+<li><button class="play" onclick="say(this)" data-a="23ff12dc00c2" data-en="Dad made us pancakes.">▶</button><span class="sent">Dad made us pancakes.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c51b9bbd9eb0" data-en="We watch TV.">▶</button><span class="sent">We watch TV.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6f79ea55469f" data-en="They eat lunch.">▶</button><span class="sent">They eat lunch.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2075533b31f9" data-en="He reads a book.">▶</button><span class="sent">He reads a book.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d62d8268a2d2" data-en="The baby sleeps.">▶</button><span class="sent">The baby sleeps.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b722566bd2b6" data-en="She likes music.">▶</button><span class="sent">She likes music.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2ada9854d89e" data-en="He became a doctor.">▶</button><span class="sent">He became a doctor.</span></li>
+<li><button class="play" onclick="say(this)" data-a="32fe9b58b8e5" data-en="Lamps shine.">▶</button><span class="sent">Lamps shine.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f91a2c1fb058" data-en="The baby laughs.">▶</button><span class="sent">The baby laughs.</span></li>
+<li><button class="play" onclick="say(this)" data-a="613c298cb93e" data-en="Frogs jump.">▶</button><span class="sent">Frogs jump.</span></li>
+<li><button class="play" onclick="say(this)" data-a="df8a2541a49c" data-en="The clock ticks.">▶</button><span class="sent">The clock ticks.</span></li>
+<li><button class="play" onclick="say(this)" data-a="74a28bcf2feb" data-en="She sent us a gift.">▶</button><span class="sent">She sent us a gift.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ae3237f1c4b2" data-en="The bird flew away.">▶</button><span class="sent">The bird flew away.</span></li>
+<li><button class="play" onclick="say(this)" data-a="334a13281e05" data-en="Mom made him tea.">▶</button><span class="sent">Mom made him tea.</span></li>
+<li><button class="play" onclick="say(this)" data-a="42826d8531ad" data-en="I told her a joke.">▶</button><span class="sent">I told her a joke.</span></li>
+<li><button class="play" onclick="say(this)" data-a="dfbbc4284748" data-en="He gave me a pen.">▶</button><span class="sent">He gave me a pen.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6aa96e3147f2" data-en="We call it luck.">▶</button><span class="sent">We call it luck.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e95ed29b07c3" data-en="They named the dog Max.">▶</button><span class="sent">They named the dog Max.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8b29be4d127c" data-en="He handed me a map.">▶</button><span class="sent">He handed me a map.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1a18bacef538" data-en="The fire keeps us warm.">▶</button><span class="sent">The fire keeps us warm.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a49b7f2bbf3f" data-en="I found the test hard.">▶</button><span class="sent">I found the test hard.</span></li>
+<li><button class="play" onclick="say(this)" data-a="47b7612628fd" data-en="We play games.">▶</button><span class="sent">We play games.</span></li>
+<li><button class="play" onclick="say(this)" data-a="61783f88cea2" data-en="They grow plants.">▶</button><span class="sent">They grow plants.</span></li>
+<li><button class="play" onclick="say(this)" data-a="68cc87ffda34" data-en="I read books.">▶</button><span class="sent">I read books.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6ca125ca6470" data-en="She eats rice.">▶</button><span class="sent">She eats rice.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9cccaa4fed27" data-en="He is smart.">▶</button><span class="sent">He is smart.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9e46db1ca744" data-en="She is a pilot.">▶</button><span class="sent">She is a pilot.</span></li>
+<li><button class="play" onclick="say(this)" data-a="97179a727f26" data-en="He looks strong.">▶</button><span class="sent">He looks strong.</span></li>
+<li><button class="play" onclick="say(this)" data-a="cea75c03cabf" data-en="We made him captain.">▶</button><span class="sent">We made him captain.</span></li>
+<li><button class="play" onclick="say(this)" data-a="aa1cd353bba7" data-en="They are quiet.">▶</button><span class="sent">They are quiet.</span></li>
+<li><button class="play" onclick="say(this)" data-a="dc6aa1c96938" data-en="It became quiet.">▶</button><span class="sent">It became quiet.</span></li>
+<li><button class="play" onclick="say(this)" data-a="13eedfe83146" data-en="The tea is warm.">▶</button><span class="sent">The tea is warm.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f274582702b7" data-en="I love my bike.">▶</button><span class="sent">I love my bike.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ffc6bf832d4e" data-en="They are kind.">▶</button><span class="sent">They are kind.</span></li>
+<li><button class="play" onclick="say(this)" data-a="29682fba1e90" data-en="She is a nurse.">▶</button><span class="sent">She is a nurse.</span></li>
+<li><button class="play" onclick="say(this)" data-a="00152b21f81c" data-en="He looks tired.">▶</button><span class="sent">He looks tired.</span></li>
+<li><button class="play" onclick="say(this)" data-a="eaf252b09b53" data-en="Turtles swim.">▶</button><span class="sent">Turtles swim.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f582e0a9159d" data-en="The river flows.">▶</button><span class="sent">The river flows.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9733b06aa5c5" data-en="Birds fly.">▶</button><span class="sent">Birds fly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f9111f289693" data-en="Horses run.">▶</button><span class="sent">Horses run.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f81c815542a9" data-en="She is happy.">▶</button><span class="sent">She is happy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4f7e08877191" data-en="He is a boy.">▶</button><span class="sent">He is a boy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a421b4652210" data-en="She looks sad.">▶</button><span class="sent">She looks sad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6fa9223b5681" data-en="I like candy.">▶</button><span class="sent">I like candy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4be2b606721f" data-en="It tastes sour.">▶</button><span class="sent">It tastes sour.</span></li>
+<li><button class="play" onclick="say(this)" data-a="738add7b17fa" data-en="They are happy.">▶</button><span class="sent">They are happy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e6d1ea70b706" data-en="The rain made it wet.">▶</button><span class="sent">The rain made it wet.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4c58dc9f4612" data-en="We keep it warm.">▶</button><span class="sent">We keep it warm.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5f37eef4954e" data-en="He calls her Kate.">▶</button><span class="sent">He calls her Kate.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f3a7a4731b49" data-en="She lent me a pen.">▶</button><span class="sent">She lent me a pen.</span></li>
+<li><button class="play" onclick="say(this)" data-a="94d5578eaa80" data-en="They found it easy.">▶</button><span class="sent">They found it easy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="cfd9714c4041" data-en="He bought me a book.">▶</button><span class="sent">He bought me a book.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d7e17fcbbb00" data-en="The song made me sleepy.">▶</button><span class="sent">The song made me sleepy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="35f55ed171c5" data-en="We call him a champion.">▶</button><span class="sent">We call him a champion.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ca790342b47f" data-en="She keeps it clean.">▶</button><span class="sent">She keeps it clean.</span></li>
+<li><button class="play" onclick="say(this)" data-a="fed8a2571fe2" data-en="I found it easy.">▶</button><span class="sent">I found it easy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="05c309194c78" data-en="It sounds nice.">▶</button><span class="sent">It sounds nice.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ae4ff2696eea" data-en="I feel cold.">▶</button><span class="sent">I feel cold.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8effb0af34b1" data-en="She looks calm.">▶</button><span class="sent">She looks calm.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3e35d547eed4" data-en="The jam tastes sweet.">▶</button><span class="sent">The jam tastes sweet.</span></li>
+<li><button class="play" onclick="say(this)" data-a="bf12bb8b18f2" data-en="He closes the window.">▶</button><span class="sent">He closes the window.</span></li>
+<li><button class="play" onclick="say(this)" data-a="57bc3948319e" data-en="The news made her glad.">▶</button><span class="sent">The news made her glad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5908f1bdd1fd" data-en="I sent them a card.">▶</button><span class="sent">I sent them a card.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b0569d2a159c" data-en="We cooked him rice.">▶</button><span class="sent">We cooked him rice.</span></li>
+<li><button class="play" onclick="say(this)" data-a="bacc2912a134" data-en="She gave him a toy.">▶</button><span class="sent">She gave him a toy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3f275f664e27" data-en="He bought me shoes.">▶</button><span class="sent">He bought me shoes.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4df15ab00403" data-en="I send him a letter.">▶</button><span class="sent">I send him a letter.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ff568ce09cc0" data-en="Mom cooks me soup.">▶</button><span class="sent">Mom cooks me soup.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2dd3e9fcfea0" data-en="He gives us candy.">▶</button><span class="sent">He gives us candy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="90e9e034ea30" data-en="The film made us sad.">▶</button><span class="sent">The film made us sad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="37a501c0d9c4" data-en="She tells me a story.">▶</button><span class="sent">She tells me a story.</span></li>
+<li><button class="play" onclick="say(this)" data-a="20eb9614392b" data-en="The bird sings.">▶</button><span class="sent">The bird sings.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2721ceecd221" data-en="The horse jumps.">▶</button><span class="sent">The horse jumps.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f7dd18a753f3" data-en="The cook tastes the soup.">▶</button><span class="sent">The cook tastes the soup.</span></li>
+<li><button class="play" onclick="say(this)" data-a="28f3473f6be1" data-en="The leaves shake.">▶</button><span class="sent">The leaves shake.</span></li>
+<li><button class="play" onclick="say(this)" data-a="95e7f5c4a255" data-en="The engine stops.">▶</button><span class="sent">The engine stops.</span></li>
+<li><button class="play" onclick="say(this)" data-a="33b9c8dce62c" data-en="I want water.">▶</button><span class="sent">I want water.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a58a7a41e0c4" data-en="She buys milk.">▶</button><span class="sent">She buys milk.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f8d8d3ef6a67" data-en="He feels sleepy.">▶</button><span class="sent">He feels sleepy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="227c1564800a" data-en="We enjoy music.">▶</button><span class="sent">We enjoy music.</span></li>
+<li><button class="play" onclick="say(this)" data-a="64d570aa3345" data-en="They draw maps.">▶</button><span class="sent">They draw maps.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c5a7e66d1507" data-en="He sent her flowers.">▶</button><span class="sent">He sent her flowers.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9b3b41ff0c06" data-en="She told him the news.">▶</button><span class="sent">She told him the news.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1511eff71605" data-en="They painted the fence white.">▶</button><span class="sent">They painted the fence white.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f64c62b2b792" data-en="Mom passed us plates.">▶</button><span class="sent">Mom passed us plates.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1c8bd0bce8f6" data-en="I lent him a pen.">▶</button><span class="sent">I lent him a pen.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3ad64f4bead6" data-en="The floor is clean.">▶</button><span class="sent">The floor is clean.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c8ce1d619a35" data-en="The bread smells fresh.">▶</button><span class="sent">The bread smells fresh.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9a475280e25e" data-en="The path became narrow.">▶</button><span class="sent">The path became narrow.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e4a1e4051f13" data-en="The players look ready.">▶</button><span class="sent">The players look ready.</span></li>
+<li><button class="play" onclick="say(this)" data-a="fc496f998a57" data-en="The candle burns.">▶</button><span class="sent">The candle burns.</span></li>
+</ol>
+</section>
+<section id="s22">
+<h2><span class="setno">세트 22</span> 형용사와 부사 <span class="vol">실전편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="2ee874b0ef9b" data-en="The food tastes good.">▶</button><span class="sent">The food tastes good.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3339be82418f" data-en="The baby sleeps quietly.">▶</button><span class="sent">The baby sleeps quietly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="606d350a4393" data-en="I feel sad.">▶</button><span class="sent">I feel sad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f2beebbae108" data-en="He runs fast.">▶</button><span class="sent">He runs fast.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c0ffb8b2f3f7" data-en="The flower smells sweet.">▶</button><span class="sent">The flower smells sweet.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4512d8ed3eb0" data-en="This towel feels soft.">▶</button><span class="sent">This towel feels soft.</span></li>
+<li><button class="play" onclick="say(this)" data-a="35d73ec9f9a6" data-en="Birds sing sweetly.">▶</button><span class="sent">Birds sing sweetly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="dcff4c94e3a9" data-en="He walks slowly.">▶</button><span class="sent">He walks slowly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="724f9678ef4e" data-en="Your idea sounds great.">▶</button><span class="sent">Your idea sounds great.</span></li>
+<li><button class="play" onclick="say(this)" data-a="fea1192707c6" data-en="They sang well.">▶</button><span class="sent">They sang well.</span></li>
+<li><button class="play" onclick="say(this)" data-a="edf62fa2a219" data-en="The soup got cold.">▶</button><span class="sent">The soup got cold.</span></li>
+<li><button class="play" onclick="say(this)" data-a="0f459c89afeb" data-en="The dog barks loudly.">▶</button><span class="sent">The dog barks loudly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4fab00166686" data-en="She speaks softly.">▶</button><span class="sent">She speaks softly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b4b3770e346d" data-en="The fruit went bad.">▶</button><span class="sent">The fruit went bad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b28087476029" data-en="The bell rings loudly.">▶</button><span class="sent">The bell rings loudly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8effb0af34b1" data-en="She looks calm.">▶</button><span class="sent">She looks calm.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 4개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="0b87a038ce4b" data-en="The music sounds soft .">▶</button><span class="sent">The music sounds soft .</span></li>
+<li><button class="play" onclick="say(this)" data-a="18f0010a9016" data-en="The door closed softly .">▶</button><span class="sent">The door closed softly .</span></li>
+<li><button class="play" onclick="say(this)" data-a="b72536f696a7" data-en="The pizza smells delicious.">▶</button><span class="sent">The pizza smells delicious.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ea8ba7b6d634" data-en="He works hard every day.">▶</button><span class="sent">He works hard every day.</span></li>
+</ol></details>
+</section>
+<section id="s23">
+<h2><span class="setno">세트 23</span> 긴 문장 분석 <span class="vol">실전편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="0a9c62ff4497" data-en="The kind lady gave the lost child some water.">▶</button><span class="sent">The kind lady gave the lost child some water.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1bff1b6991db" data-en="Everyone in class calls the new boy Danny.">▶</button><span class="sent">Everyone in class calls the new boy Danny.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e3e27fd8e7ec" data-en="The winter morning felt very cold.">▶</button><span class="sent">The winter morning felt very cold.</span></li>
+<li><button class="play" onclick="say(this)" data-a="37192eade661" data-en="Three small birds sat on the fence.">▶</button><span class="sent">Three small birds sat on the fence.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f73a56d4efc1" data-en="The nurse gave the sick boy some medicine.">▶</button><span class="sent">The nurse gave the sick boy some medicine.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3b856031369e" data-en="My little brother draws pictures on the wall.">▶</button><span class="sent">My little brother draws pictures on the wall.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3abf315ee363" data-en="The team elected the tall girl captain.">▶</button><span class="sent">The team elected the tall girl captain.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4be9eef99135" data-en="A tall man in a black coat opened the gate.">▶</button><span class="sent">A tall man in a black coat opened the gate.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3c7809101ec5" data-en="The good news made my parents proud.">▶</button><span class="sent">The good news made my parents proud.</span></li>
+<li><button class="play" onclick="say(this)" data-a="30bef12110c9" data-en="The fresh bread on the table smelled wonderful.">▶</button><span class="sent">The fresh bread on the table smelled wonderful.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e40dd20920e6" data-en="The loud music kept the neighbors awake.">▶</button><span class="sent">The loud music kept the neighbors awake.</span></li>
+<li><button class="play" onclick="say(this)" data-a="fea0a6d2af81" data-en="Many colorful fish swam in the clear water.">▶</button><span class="sent">Many colorful fish swam in the clear water.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6945f50af732" data-en="The chef cooked a big meal for the guests.">▶</button><span class="sent">The chef cooked a big meal for the guests.</span></li>
+<li><button class="play" onclick="say(this)" data-a="372cb7a1b6c5" data-en="My grandmother told the children a funny tale.">▶</button><span class="sent">My grandmother told the children a funny tale.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1a31605acdae" data-en="The sudden storm made the sailors nervous.">▶</button><span class="sent">The sudden storm made the sailors nervous.</span></li>
+<li><button class="play" onclick="say(this)" data-a="bfb602b7feb2" data-en="Our teacher showed us an old map.">▶</button><span class="sent">Our teacher showed us an old map.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8a1548d48806" data-en="On sunny days, the children swim in the sea.">▶</button><span class="sent">On sunny days, the children swim in the sea.</span></li>
+<li><button class="play" onclick="say(this)" data-a="0df31356c21e" data-en="The old clock on the wall stopped last night.">▶</button><span class="sent">The old clock on the wall stopped last night.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2b05adb7a5a1" data-en="In the morning, my sister sends her friend a message.">▶</button><span class="sent">In the morning, my sister sends her friend a message.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e4fb1a1a099d" data-en="The boy with the red cap kept the door open.">▶</button><span class="sent">The boy with the red cap kept the door open.</span></li>
+</ol>
+</section>
+<section id="s24">
+<h2><span class="setno">세트 24</span> 우리말에 맞는 문장 고르기 <span class="vol">실전편</span></h2>
+<ol class="list">
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 20개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="6513f1c2b338" data-en="We play badminton.">▶</button><span class="sent">We play badminton.</span></li>
+<li><button class="play" onclick="say(this)" data-a="bbf9a5d24899" data-en="He made me a cake.">▶</button><span class="sent">He made me a cake.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c4c55606e175" data-en="The news made me sad.">▶</button><span class="sent">The news made me sad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="013f8942cdcd" data-en="We call him a king.">▶</button><span class="sent">We call him a king.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1b6a7722a2a3" data-en="The teacher teaches us English.">▶</button><span class="sent">The teacher teaches us English.</span></li>
+<li><button class="play" onclick="say(this)" data-a="7d2de3b1a1ad" data-en="She made me happy.">▶</button><span class="sent">She made me happy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="17048418b8af" data-en="The movie made us scared.">▶</button><span class="sent">The movie made us scared.</span></li>
+<li><button class="play" onclick="say(this)" data-a="28f8c76bdb45" data-en="She sent me a letter.">▶</button><span class="sent">She sent me a letter.</span></li>
+<li><button class="play" onclick="say(this)" data-a="23ff12dc00c2" data-en="Dad made us pancakes.">▶</button><span class="sent">Dad made us pancakes.</span></li>
+<li><button class="play" onclick="say(this)" data-a="fb9bffe5be37" data-en="The soup tastes good.">▶</button><span class="sent">The soup tastes good.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9d5d37738c4f" data-en="I like grapes.">▶</button><span class="sent">I like grapes.</span></li>
+<li><button class="play" onclick="say(this)" data-a="30f625d47aaa" data-en="He is a doctor.">▶</button><span class="sent">He is a doctor.</span></li>
+<li><button class="play" onclick="say(this)" data-a="32c832695f2e" data-en="They named a baby.">▶</button><span class="sent">They named a baby.</span></li>
+<li><button class="play" onclick="say(this)" data-a="613c298cb93e" data-en="Frogs jump.">▶</button><span class="sent">Frogs jump.</span></li>
+<li><button class="play" onclick="say(this)" data-a="0fd9bc818660" data-en="I lent him a book.">▶</button><span class="sent">I lent him a book.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9170d1d5da08" data-en="She keeps the desk tidy.">▶</button><span class="sent">She keeps the desk tidy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="65ee7624faad" data-en="The movie made us sad.">▶</button><span class="sent">The movie made us sad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a3245cb994c6" data-en="She lent me an umbrella.">▶</button><span class="sent">She lent me an umbrella.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c5dc2515b7a7" data-en="We call the cat Nabi.">▶</button><span class="sent">We call the cat Nabi.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6708c415a974" data-en="The soup tastes salty.">▶</button><span class="sent">The soup tastes salty.</span></li>
+</ol></details>
+</section>
+<section id="s25">
+<h2><span class="setno">세트 25</span> 심화 비교 ① 종합 <span class="vol">실전편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="840a2980ba37" data-en="The waiter brought the customers their food.">▶</button><span class="sent">The waiter brought the customers their food.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d20079ab90fa" data-en="The workers built a tall tower.">▶</button><span class="sent">The workers built a tall tower.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3de99a1a0ce1" data-en="The hot sun turned the grass yellow.">▶</button><span class="sent">The hot sun turned the grass yellow.</span></li>
+<li><button class="play" onclick="say(this)" data-a="596f3beb5032" data-en="He showed his friend the new game.">▶</button><span class="sent">He showed his friend the new game.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f5a2cf469771" data-en="A small boat floated on the lake.">▶</button><span class="sent">A small boat floated on the lake.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4b7c6a9aa3b1" data-en="The clown made the children happy.">▶</button><span class="sent">The clown made the children happy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="31799a456c85" data-en="The cold wind blew all night.">▶</button><span class="sent">The cold wind blew all night.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c04d8e5c64a1" data-en="She bought her son a new bike.">▶</button><span class="sent">She bought her son a new bike.</span></li>
+<li><button class="play" onclick="say(this)" data-a="88e9ba11f248" data-en="Her sweet voice sounded lovely.">▶</button><span class="sent">Her sweet voice sounded lovely.</span></li>
+<li><button class="play" onclick="say(this)" data-a="adb26b462a09" data-en="My uncle grows apples on his farm.">▶</button><span class="sent">My uncle grows apples on his farm.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8930662e6057" data-en="The soft blanket kept the baby warm.">▶</button><span class="sent">The soft blanket kept the baby warm.</span></li>
+<li><button class="play" onclick="say(this)" data-a="dc10ef6d4e26" data-en="His plan sounds a little strange.">▶</button><span class="sent">His plan sounds a little strange.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b0d0e6252a36" data-en="We painted the old fence white.">▶</button><span class="sent">We painted the old fence white.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f86406874afd" data-en="The teacher asked us a hard question.">▶</button><span class="sent">The teacher asked us a hard question.</span></li>
+<li><button class="play" onclick="say(this)" data-a="90771e0093aa" data-en="They elected him team captain.">▶</button><span class="sent">They elected him team captain.</span></li>
+<li><button class="play" onclick="say(this)" data-a="bb70ac146557" data-en="The tired dog lay on the floor.">▶</button><span class="sent">The tired dog lay on the floor.</span></li>
+<li><button class="play" onclick="say(this)" data-a="245f66f4edf1" data-en="He got me a chair.">▶</button><span class="sent">He got me a chair.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2c4dc287429e" data-en="The coach got me ready.">▶</button><span class="sent">The coach got me ready.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4a9ed950338a" data-en="He teaches us science.">▶</button><span class="sent">He teaches us science.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 2개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="8e0f66ef2914" data-en="He teaches science to us.">▶</button><span class="sent">He teaches science to us.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5ada3e9f9709" data-en="I showed him a map.">▶</button><span class="sent">I showed him a map.</span></li>
+</ol></details>
+</section>
+<section id="s26">
+<h2><span class="setno">세트 26</span> 심화 비교 ② 4형식과 5형식 <span class="vol">실전편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="ef379b481806" data-en="He sent her a gift.">▶</button><span class="sent">He sent her a gift.</span></li>
+<li><button class="play" onclick="say(this)" data-a="40099174fe7d" data-en="They wished me luck.">▶</button><span class="sent">They wished me luck.</span></li>
+<li><button class="play" onclick="say(this)" data-a="bcf8fb6152a2" data-en="The heavy bag made me tired.">▶</button><span class="sent">The heavy bag made me tired.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4742a91e6c39" data-en="He bought me a ticket.">▶</button><span class="sent">He bought me a ticket.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5c8f023189fd" data-en="Warm soup keeps us healthy.">▶</button><span class="sent">Warm soup keeps us healthy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="bbac09874abf" data-en="She bought me a scarf.">▶</button><span class="sent">She bought me a scarf.</span></li>
+<li><button class="play" onclick="say(this)" data-a="35d5d7ef2e08" data-en="I cooked him dinner.">▶</button><span class="sent">I cooked him dinner.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2062f340a6c8" data-en="The trip made us hungry.">▶</button><span class="sent">The trip made us hungry.</span></li>
+<li><button class="play" onclick="say(this)" data-a="220285e7a1d6" data-en="The story left me sad.">▶</button><span class="sent">The story left me sad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1eeda504186f" data-en="We saved her a seat.">▶</button><span class="sent">We saved her a seat.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3ddf0a0d43ba" data-en="The heat made him sleepy.">▶</button><span class="sent">The heat made him sleepy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b581a3027101" data-en="Mom made me a coat.">▶</button><span class="sent">Mom made me a coat.</span></li>
+<li><button class="play" onclick="say(this)" data-a="beefa1ab0a02" data-en="Loud music made us tired.">▶</button><span class="sent">Loud music made us tired.</span></li>
+<li><button class="play" onclick="say(this)" data-a="214fd1aa635c" data-en="Winning made them proud.">▶</button><span class="sent">Winning made them proud.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3c9f6ac6fa72" data-en="She left me a note.">▶</button><span class="sent">She left me a note.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e675153b94f5" data-en="The joke made me happy.">▶</button><span class="sent">The joke made me happy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b8e5569a02b4" data-en="She made him a cake.">▶</button><span class="sent">She made him a cake.</span></li>
+<li><button class="play" onclick="say(this)" data-a="18c7f11c0dc4" data-en="She made him angry.">▶</button><span class="sent">She made him angry.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3a1b6bd66734" data-en="They bought her a ring.">▶</button><span class="sent">They bought her a ring.</span></li>
+<li><button class="play" onclick="say(this)" data-a="90915652dcf9" data-en="They elected her captain.">▶</button><span class="sent">They elected her captain.</span></li>
+<li><button class="play" onclick="say(this)" data-a="aef47e88f1e1" data-en="Grandpa told us a secret.">▶</button><span class="sent">Grandpa told us a secret.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 2개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="82c4989bc40c" data-en="Grandpa told a secret to us.">▶</button><span class="sent">Grandpa told a secret to us.</span></li>
+<li><button class="play" onclick="say(this)" data-a="172d84499172" data-en="They named the baby Luna.">▶</button><span class="sent">They named the baby Luna.</span></li>
+</ol></details>
+</section>
+<section id="s27">
+<h2><span class="setno">세트 27</span> 심화 비교 ③ 같은 동사의 2형식과 3형식 <span class="vol">실전편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="468978bc07d7" data-en="The bread smells nice.">▶</button><span class="sent">The bread smells nice.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b5e3bcb4793b" data-en="The sky grew dark.">▶</button><span class="sent">The sky grew dark.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e323eba88b85" data-en="He felt the cold water.">▶</button><span class="sent">He felt the cold water.</span></li>
+<li><button class="play" onclick="say(this)" data-a="fd2dc79a3a13" data-en="He grew tall.">▶</button><span class="sent">He grew tall.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d5fc28262d3c" data-en="She smelled the flower.">▶</button><span class="sent">She smelled the flower.</span></li>
+<li><button class="play" onclick="say(this)" data-a="47f88def2ef7" data-en="The plan sounds good.">▶</button><span class="sent">The plan sounds good.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9ef69c052805" data-en="He looked at the sky.">▶</button><span class="sent">He looked at the sky.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3756eede5ea2" data-en="She sounded the alarm.">▶</button><span class="sent">She sounded the alarm.</span></li>
+<li><button class="play" onclick="say(this)" data-a="97179a727f26" data-en="He looks strong.">▶</button><span class="sent">He looks strong.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a3f68ed7e4a5" data-en="Farmers grow rice.">▶</button><span class="sent">Farmers grow rice.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e1605426cfaf" data-en="The pie tastes sweet.">▶</button><span class="sent">The pie tastes sweet.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6faa9d5f3cb4" data-en="This blanket feels soft.">▶</button><span class="sent">This blanket feels soft.</span></li>
+<li><button class="play" onclick="say(this)" data-a="bc194420a4ec" data-en="She tasted the soup.">▶</button><span class="sent">She tasted the soup.</span></li>
+<li><button class="play" onclick="say(this)" data-a="36812c9cfca3" data-en="The cloth feels rough.">▶</button><span class="sent">The cloth feels rough.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f02b40317433" data-en="They grow flowers.">▶</button><span class="sent">They grow flowers.</span></li>
+<li><button class="play" onclick="say(this)" data-a="22bcf115af2d" data-en="The music sounds loud.">▶</button><span class="sent">The music sounds loud.</span></li>
+<li><button class="play" onclick="say(this)" data-a="73ec87d55ecd" data-en="The soup grew cold.">▶</button><span class="sent">The soup grew cold.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2c5bd8207575" data-en="The farmer grows corn.">▶</button><span class="sent">The farmer grows corn.</span></li>
+<li><button class="play" onclick="say(this)" data-a="91002c76589f" data-en="The plan seems simple.">▶</button><span class="sent">The plan seems simple.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2c4fca408984" data-en="She solved the problem.">▶</button><span class="sent">She solved the problem.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 2개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="5cac5e74da0f" data-en="He felt sad after the game.">▶</button><span class="sent">He felt sad after the game.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c0876539b44c" data-en="The room became quiet.">▶</button><span class="sent">The room became quiet.</span></li>
+</ol></details>
+</section>
+<section id="s28">
+<h2><span class="setno">세트 28</span> 어법 <span class="vol">실전편</span></h2>
+<ol class="list">
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 20개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="0f459c89afeb" data-en="The dog barks loudly.">▶</button><span class="sent">The dog barks loudly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9c84a0315057" data-en="He calls a taxi me.">▶</button><span class="sent">He calls a taxi me.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1fddfe0b43b8" data-en="The flower smells sweetly.">▶</button><span class="sent">The flower smells sweetly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1b6a7722a2a3" data-en="The teacher teaches us English.">▶</button><span class="sent">The teacher teaches us English.</span></li>
+<li><button class="play" onclick="say(this)" data-a="99b6f33593c9" data-en="He runs fastly.">▶</button><span class="sent">He runs fastly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2c4c271154e8" data-en="He feels happy.">▶</button><span class="sent">He feels happy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1a6518eaa18d" data-en="Good news made her glad.">▶</button><span class="sent">Good news made her glad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6393cce1692e" data-en="We call Tom him.">▶</button><span class="sent">We call Tom him.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f9707a8d408f" data-en="The sky grew darkly.">▶</button><span class="sent">The sky grew darkly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="30f625d47aaa" data-en="He is a doctor.">▶</button><span class="sent">He is a doctor.</span></li>
+<li><button class="play" onclick="say(this)" data-a="394ef9b78c79" data-en="He gave me a book.">▶</button><span class="sent">He gave me a book.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f1228677e797" data-en="I lent a pen her.">▶</button><span class="sent">I lent a pen her.</span></li>
+<li><button class="play" onclick="say(this)" data-a="164a86bef06a" data-en="We plays soccer.">▶</button><span class="sent">We plays soccer.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c4c55606e175" data-en="The news made me sad.">▶</button><span class="sent">The news made me sad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="0039865bfe7c" data-en="He sent her a letter.">▶</button><span class="sent">He sent her a letter.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5f0d0c25d2bf" data-en="She keeps the room cleanly.">▶</button><span class="sent">She keeps the room cleanly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9300f06cfcfb" data-en="She gave me a pencil.">▶</button><span class="sent">She gave me a pencil.</span></li>
+<li><button class="play" onclick="say(this)" data-a="03ff4471c70a" data-en="He named the puppy Max.">▶</button><span class="sent">He named the puppy Max.</span></li>
+<li><button class="play" onclick="say(this)" data-a="67aded4aaf73" data-en="The juice tastes sour.">▶</button><span class="sent">The juice tastes sour.</span></li>
+<li><button class="play" onclick="say(this)" data-a="84355aff2af3" data-en="My father buys me a car every year.">▶</button><span class="sent">My father buys me a car every year.</span></li>
+</ol></details>
+</section>
+<section id="s29">
+<h2><span class="setno">세트 29</span> 성분이 다른 것 찾기 <span class="vol">실전편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="f9111f289693" data-en="Horses run.">▶</button><span class="sent">Horses run.</span></li>
+<li><button class="play" onclick="say(this)" data-a="eaf252b09b53" data-en="Turtles swim.">▶</button><span class="sent">Turtles swim.</span></li>
+<li><button class="play" onclick="say(this)" data-a="98d5a614b073" data-en="Puppies sleep.">▶</button><span class="sent">Puppies sleep.</span></li>
+<li><button class="play" onclick="say(this)" data-a="32fe9b58b8e5" data-en="Lamps shine.">▶</button><span class="sent">Lamps shine.</span></li>
+<li><button class="play" onclick="say(this)" data-a="613c298cb93e" data-en="Frogs jump.">▶</button><span class="sent">Frogs jump.</span></li>
+<li><button class="play" onclick="say(this)" data-a="62665ac47dc0" data-en="We call the boy a genius.">▶</button><span class="sent">We call the boy a genius.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f1c900d5228a" data-en="We call her Ann.">▶</button><span class="sent">We call her Ann.</span></li>
+<li><button class="play" onclick="say(this)" data-a="cab3ad9120ea" data-en="They named the baby Mia.">▶</button><span class="sent">They named the baby Mia.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9170d1d5da08" data-en="She keeps the desk tidy.">▶</button><span class="sent">She keeps the desk tidy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ead1747031a9" data-en="I found the test easy.">▶</button><span class="sent">I found the test easy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b541335196dd" data-en="We give them gifts.">▶</button><span class="sent">We give them gifts.</span></li>
+<li><button class="play" onclick="say(this)" data-a="24e7ab3abebe" data-en="Mom gives us food.">▶</button><span class="sent">Mom gives us food.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e0db6cbb9986" data-en="He gives me candy.">▶</button><span class="sent">He gives me candy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="fc2464a3ccfa" data-en="She gives me a ruler.">▶</button><span class="sent">She gives me a ruler.</span></li>
+<li><button class="play" onclick="say(this)" data-a="382d81cc30e0" data-en="I give him a pen.">▶</button><span class="sent">I give him a pen.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f41c4fbb4f07" data-en="We painted the wall blue.">▶</button><span class="sent">We painted the wall blue.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c4c55606e175" data-en="The news made me sad.">▶</button><span class="sent">The news made me sad.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ca790342b47f" data-en="She keeps it clean.">▶</button><span class="sent">She keeps it clean.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e211ab103a9f" data-en="Heat made the butter soft.">▶</button><span class="sent">Heat made the butter soft.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8ff370abbcef" data-en="They found the box empty.">▶</button><span class="sent">They found the box empty.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3595bf319759" data-en="He works in Seoul.">▶</button><span class="sent">He works in Seoul.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5e97108f2b21" data-en="We play after school.">▶</button><span class="sent">We play after school.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d72054531f02" data-en="They meet on Monday.">▶</button><span class="sent">They meet on Monday.</span></li>
+<li><button class="play" onclick="say(this)" data-a="db880fcec48e" data-en="She studies math at night.">▶</button><span class="sent">She studies math at night.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5eb047f13f21" data-en="I like music.">▶</button><span class="sent">I like music.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4ac6629b3a77" data-en="She wants a kite.">▶</button><span class="sent">She wants a kite.</span></li>
+<li><button class="play" onclick="say(this)" data-a="7b645e577110" data-en="He knows the rule.">▶</button><span class="sent">He knows the rule.</span></li>
+<li><button class="play" onclick="say(this)" data-a="56e898674985" data-en="We enjoy games.">▶</button><span class="sent">We enjoy games.</span></li>
+<li><button class="play" onclick="say(this)" data-a="353df9dd3e82" data-en="They built a house.">▶</button><span class="sent">They built a house.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ecc464d0b2ac" data-en="I need water.">▶</button><span class="sent">I need water.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b3addd42bc74" data-en="Kids play.">▶</button><span class="sent">Kids play.</span></li>
+<li><button class="play" onclick="say(this)" data-a="77841e88f12a" data-en="The artist draws.">▶</button><span class="sent">The artist draws.</span></li>
+<li><button class="play" onclick="say(this)" data-a="79e4be623da0" data-en="The chef cooks.">▶</button><span class="sent">The chef cooks.</span></li>
+<li><button class="play" onclick="say(this)" data-a="198355aed145" data-en="My sister bakes.">▶</button><span class="sent">My sister bakes.</span></li>
+<li><button class="play" onclick="say(this)" data-a="bf85f5273c88" data-en="The dog bites.">▶</button><span class="sent">The dog bites.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f02b40317433" data-en="They grow flowers.">▶</button><span class="sent">They grow flowers.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c4d2cc9941b0" data-en="We meet on Sunday.">▶</button><span class="sent">We meet on Sunday.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8625140b006c" data-en="He washes his car.">▶</button><span class="sent">He washes his car.</span></li>
+<li><button class="play" onclick="say(this)" data-a="0d8f922e73f9" data-en="She sings a song.">▶</button><span class="sent">She sings a song.</span></li>
+<li><button class="play" onclick="say(this)" data-a="68cc87ffda34" data-en="I read books.">▶</button><span class="sent">I read books.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6513f1c2b338" data-en="We play badminton.">▶</button><span class="sent">We play badminton.</span></li>
+<li><button class="play" onclick="say(this)" data-a="761fe40536f7" data-en="They eat rice.">▶</button><span class="sent">They eat rice.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9d5d37738c4f" data-en="I like grapes.">▶</button><span class="sent">I like grapes.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f2beebbae108" data-en="He runs fast.">▶</button><span class="sent">He runs fast.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d9c7ee125b26" data-en="She writes a letter.">▶</button><span class="sent">She writes a letter.</span></li>
+<li><button class="play" onclick="say(this)" data-a="fbba72e51a8e" data-en="She became a nurse.">▶</button><span class="sent">She became a nurse.</span></li>
+<li><button class="play" onclick="say(this)" data-a="13eedfe83146" data-en="The tea is warm.">▶</button><span class="sent">The tea is warm.</span></li>
+<li><button class="play" onclick="say(this)" data-a="7ea27b533c48" data-en="It is a book.">▶</button><span class="sent">It is a book.</span></li>
+<li><button class="play" onclick="say(this)" data-a="dd7234b2de6e" data-en="They are farmers.">▶</button><span class="sent">They are farmers.</span></li>
+<li><button class="play" onclick="say(this)" data-a="868b7bcee127" data-en="He is my cousin.">▶</button><span class="sent">He is my cousin.</span></li>
+<li><button class="play" onclick="say(this)" data-a="62f6955a5e4a" data-en="She sent him a card.">▶</button><span class="sent">She sent him a card.</span></li>
+<li><button class="play" onclick="say(this)" data-a="0e2ce004c93e" data-en="Mom bought us shoes.">▶</button><span class="sent">Mom bought us shoes.</span></li>
+<li><button class="play" onclick="say(this)" data-a="42826d8531ad" data-en="I told her a joke.">▶</button><span class="sent">I told her a joke.</span></li>
+<li><button class="play" onclick="say(this)" data-a="394ef9b78c79" data-en="He gave me a book.">▶</button><span class="sent">He gave me a book.</span></li>
+<li><button class="play" onclick="say(this)" data-a="35f55ed171c5" data-en="We call him a champion.">▶</button><span class="sent">We call him a champion.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6a4b1032c3e9" data-en="Kites fly high.">▶</button><span class="sent">Kites fly high.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4abc932840e8" data-en="The tomatoes grow well.">▶</button><span class="sent">The tomatoes grow well.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b211694c677e" data-en="The students play in the yard.">▶</button><span class="sent">The students play in the yard.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8c985fda7ecb" data-en="My cousin runs fast.">▶</button><span class="sent">My cousin runs fast.</span></li>
+<li><button class="play" onclick="say(this)" data-a="246829a179bc" data-en="The bus arrives soon.">▶</button><span class="sent">The bus arrives soon.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c51b9bbd9eb0" data-en="We watch TV.">▶</button><span class="sent">We watch TV.</span></li>
+<li><button class="play" onclick="say(this)" data-a="04f374d3fff6" data-en="They eat bread.">▶</button><span class="sent">They eat bread.</span></li>
+<li><button class="play" onclick="say(this)" data-a="30f625d47aaa" data-en="He is a doctor.">▶</button><span class="sent">He is a doctor.</span></li>
+<li><button class="play" onclick="say(this)" data-a="6fa9223b5681" data-en="I like candy.">▶</button><span class="sent">I like candy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f24d7d4fb5f5" data-en="She reads books.">▶</button><span class="sent">She reads books.</span></li>
+<li><button class="play" onclick="say(this)" data-a="88e4ac6e63a3" data-en="Jenny is a dancer.">▶</button><span class="sent">Jenny is a dancer.</span></li>
+<li><button class="play" onclick="say(this)" data-a="7cc2788d18bc" data-en="She looks tired.">▶</button><span class="sent">She looks tired.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ffc6bf832d4e" data-en="They are kind.">▶</button><span class="sent">They are kind.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d4e2ff18e1b1" data-en="He is a teacher.">▶</button><span class="sent">He is a teacher.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3d15eef8a468" data-en="We feel happy.">▶</button><span class="sent">We feel happy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9733b06aa5c5" data-en="Birds fly.">▶</button><span class="sent">Birds fly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="892bd1ced256" data-en="The moon rises.">▶</button><span class="sent">The moon rises.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b6b5f4fdf9d6" data-en="The cat meows.">▶</button><span class="sent">The cat meows.</span></li>
+<li><button class="play" onclick="say(this)" data-a="67d0ad492f78" data-en="My uncle sings.">▶</button><span class="sent">My uncle sings.</span></li>
+<li><button class="play" onclick="say(this)" data-a="aa1cd353bba7" data-en="They are quiet.">▶</button><span class="sent">They are quiet.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5b5a26dcd1bd" data-en="I love music.">▶</button><span class="sent">I love music.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8effb0af34b1" data-en="She looks calm.">▶</button><span class="sent">She looks calm.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e9045cb500c1" data-en="He is brave.">▶</button><span class="sent">He is brave.</span></li>
+<li><button class="play" onclick="say(this)" data-a="45bc89f1916d" data-en="It tastes sweet.">▶</button><span class="sent">It tastes sweet.</span></li>
+<li><button class="play" onclick="say(this)" data-a="48a5f737a551" data-en="I want a ticket.">▶</button><span class="sent">I want a ticket.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ddc0f41fde2f" data-en="She paints a wall.">▶</button><span class="sent">She paints a wall.</span></li>
+<li><button class="play" onclick="say(this)" data-a="18c08da0c0ba" data-en="He waits outside.">▶</button><span class="sent">He waits outside.</span></li>
+<li><button class="play" onclick="say(this)" data-a="28ec5766bb55" data-en="We fix the chair.">▶</button><span class="sent">We fix the chair.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2bdb953f6112" data-en="They pack the bags.">▶</button><span class="sent">They pack the bags.</span></li>
+<li><button class="play" onclick="say(this)" data-a="c8d12f216012" data-en="The wind stops.">▶</button><span class="sent">The wind stops.</span></li>
+<li><button class="play" onclick="say(this)" data-a="64bf18f644fc" data-en="My neighbor smiles.">▶</button><span class="sent">My neighbor smiles.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b861766dfb61" data-en="The lights blink.">▶</button><span class="sent">The lights blink.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ba4600fcde68" data-en="Fans cheer.">▶</button><span class="sent">Fans cheer.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f429cf8e77f8" data-en="The kettle whistles.">▶</button><span class="sent">The kettle whistles.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a0980ebcf1c0" data-en="He is a guide.">▶</button><span class="sent">He is a guide.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b26c6a962bf5" data-en="She feels proud.">▶</button><span class="sent">She feels proud.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a6b06496a21e" data-en="It seems fair.">▶</button><span class="sent">It seems fair.</span></li>
+<li><button class="play" onclick="say(this)" data-a="69c93f036cba" data-en="We need rest.">▶</button><span class="sent">We need rest.</span></li>
+<li><button class="play" onclick="say(this)" data-a="448d7d6f2ad8" data-en="They look ready.">▶</button><span class="sent">They look ready.</span></li>
+<li><button class="play" onclick="say(this)" data-a="7710afa002d1" data-en="He handed her a fork.">▶</button><span class="sent">He handed her a fork.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3b9f67fc970b" data-en="I sold him my bike.">▶</button><span class="sent">I sold him my bike.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5da028f280f1" data-en="We called her Sue.">▶</button><span class="sent">We called her Sue.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ab3835231c59" data-en="She passed me the salt.">▶</button><span class="sent">She passed me the salt.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d21baa8abede" data-en="Dad read us a poem.">▶</button><span class="sent">Dad read us a poem.</span></li>
+</ol>
+</section>
+<section id="s30">
+<h2><span class="setno">세트 30</span> 종합 <span class="vol">실전편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="89bdc855e108" data-en="The salty snack made me thirsty.">▶</button><span class="sent">The salty snack made me thirsty.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d94585026b07" data-en="My grandfather told us funny old stories.">▶</button><span class="sent">My grandfather told us funny old stories.</span></li>
+<li><button class="play" onclick="say(this)" data-a="03551b1bb614" data-en="The lake looked calm and clear.">▶</button><span class="sent">The lake looked calm and clear.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a99c4c540c28" data-en="She showed the visitors her new paintings.">▶</button><span class="sent">She showed the visitors her new paintings.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5592502ba7ea" data-en="The strong coffee kept my father awake.">▶</button><span class="sent">The strong coffee kept my father awake.</span></li>
+<li><button class="play" onclick="say(this)" data-a="dac631324363" data-en="That new restaurant became very popular.">▶</button><span class="sent">That new restaurant became very popular.</span></li>
+<li><button class="play" onclick="say(this)" data-a="56d3775003dc" data-en="The magazine calls this beach the best spot.">▶</button><span class="sent">The magazine calls this beach the best spot.</span></li>
+<li><button class="play" onclick="say(this)" data-a="62e9953eae86" data-en="The tall trees swayed in the wind.">▶</button><span class="sent">The tall trees swayed in the wind.</span></li>
+<li><button class="play" onclick="say(this)" data-a="438c03b7b31c" data-en="The final exam made the students nervous.">▶</button><span class="sent">The final exam made the students nervous.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ff49947d104d" data-en="Her mother bought her a pretty dress.">▶</button><span class="sent">Her mother bought her a pretty dress.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d2b6e6e3923d" data-en="The judges named her the winner.">▶</button><span class="sent">The judges named her the winner.</span></li>
+<li><button class="play" onclick="say(this)" data-a="78405619598f" data-en="A cool breeze blew through the open window.">▶</button><span class="sent">A cool breeze blew through the open window.</span></li>
+<li><button class="play" onclick="say(this)" data-a="578aa09d3cad" data-en="The little boy drew a big dinosaur.">▶</button><span class="sent">The little boy drew a big dinosaur.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e19da4d7172f" data-en="A stranger asked me the time.">▶</button><span class="sent">A stranger asked me the time.</span></li>
+<li><button class="play" onclick="say(this)" data-a="57f94dbfc543" data-en="The gardener planted many trees last spring.">▶</button><span class="sent">The gardener planted many trees last spring.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9519592abf05" data-en="We ordered the kids some warm soup.">▶</button><span class="sent">We ordered the kids some warm soup.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4639e688e7a8" data-en="The librarian handed the student a card.">▶</button><span class="sent">The librarian handed the student a card.</span></li>
+<li><button class="play" onclick="say(this)" data-a="11dd393e383e" data-en="The heavy rain kept the players inside.">▶</button><span class="sent">The heavy rain kept the players inside.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d3cb62894b49" data-en="After lunch, the small boy fell asleep on the sofa.">▶</button><span class="sent">After lunch, the small boy fell asleep on the sofa.</span></li>
+<li><button class="play" onclick="say(this)" data-a="11674436d361" data-en="She showed me her drawing.">▶</button><span class="sent">She showed me her drawing.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="038a76de9213" data-en="She showed her drawing to me.">▶</button><span class="sent">She showed her drawing to me.</span></li>
+</ol></details>
+</section>
+<section id="s31">
+<h2><span class="setno">세트 31</span> 글 속 문장 형식 <span class="vol">실전편</span></h2>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="6870577c88bf" data-en="Dad cooks us dinner.">▶</button><span class="sent">Dad cooks us dinner.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4215c19fb049" data-en="The food makes me happy.">▶</button><span class="sent">The food makes me happy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9a1fbb939496" data-en="He gives Max a treat.">▶</button><span class="sent">He gives Max a treat.</span></li>
+<li><button class="play" onclick="say(this)" data-a="458ac0b2d449" data-en="The lessons are fun.">▶</button><span class="sent">The lessons are fun.</span></li>
+<li><button class="play" onclick="say(this)" data-a="ee02defc1667" data-en="Our teacher gives us homework.">▶</button><span class="sent">Our teacher gives us homework.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b81bdeb4cae0" data-en="Many children play outside.">▶</button><span class="sent">Many children play outside.</span></li>
+<li><button class="play" onclick="say(this)" data-a="4d85259732dd" data-en="I eat warm toast.">▶</button><span class="sent">I eat warm toast.</span></li>
+<li><button class="play" onclick="say(this)" data-a="00558a1a39c3" data-en="His dog looks excited.">▶</button><span class="sent">His dog looks excited.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1878dba9125c" data-en="My friends call me Sunny.">▶</button><span class="sent">My friends call me Sunny.</span></li>
+<li><button class="play" onclick="say(this)" data-a="27b7350ab294" data-en="The sun rises early.">▶</button><span class="sent">The sun rises early.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a8ee7b2c1a65" data-en="Mom makes me breakfast.">▶</button><span class="sent">Mom makes me breakfast.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2f2accf720e8" data-en="We study math together.">▶</button><span class="sent">We study math together.</span></li>
+<li><button class="play" onclick="say(this)" data-a="82cdb607f70d" data-en="The boy calls the dog Max.">▶</button><span class="sent">The boy calls the dog Max.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3df11eabd578" data-en="The whistle blows loudly.">▶</button><span class="sent">The whistle blows loudly.</span></li>
+<li><button class="play" onclick="say(this)" data-a="9be6b5c4ceb3" data-en="I feel very sleepy.">▶</button><span class="sent">I feel very sleepy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e71fe89fda3d" data-en="A boy throws a ball.">▶</button><span class="sent">A boy throws a ball.</span></li>
+<li><button class="play" onclick="say(this)" data-a="1cbfb2df81e6" data-en="Grandma sent us a box of apples.">▶</button><span class="sent">Grandma sent us a box of apples.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5fb60477ff87" data-en="In the evening, the whole family sat around the table.">▶</button><span class="sent">In the evening, the whole family sat around the table.</span></li>
+<li><button class="play" onclick="say(this)" data-a="5e2b599d1e9c" data-en="Dad bought us hot cocoa.">▶</button><span class="sent">Dad bought us hot cocoa.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2a819d33a02f" data-en="The sun rose over the hills.">▶</button><span class="sent">The sun rose over the hills.</span></li>
+<li><button class="play" onclick="say(this)" data-a="f851fe3bf4ab" data-en="Grandma opened the old gate.">▶</button><span class="sent">Grandma opened the old gate.</span></li>
+<li><button class="play" onclick="say(this)" data-a="13cf588d7309" data-en="The air felt cool.">▶</button><span class="sent">The air felt cool.</span></li>
+<li><button class="play" onclick="say(this)" data-a="469095df4121" data-en="She gave us warm bread.">▶</button><span class="sent">She gave us warm bread.</span></li>
+<li><button class="play" onclick="say(this)" data-a="da590ed6dfba" data-en="The smell made us hungry.">▶</button><span class="sent">The smell made us hungry.</span></li>
+<li><button class="play" onclick="say(this)" data-a="3ea3a61dc4f5" data-en="We picked apples all morning.">▶</button><span class="sent">We picked apples all morning.</span></li>
+<li><button class="play" onclick="say(this)" data-a="52c176a6d8e2" data-en="The baskets grew heavy.">▶</button><span class="sent">The baskets grew heavy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="43627d18aadb" data-en="Grandpa told us funny stories.">▶</button><span class="sent">Grandpa told us funny stories.</span></li>
+<li><button class="play" onclick="say(this)" data-a="b40fd4d8684b" data-en="We called the little dog Bori.">▶</button><span class="sent">We called the little dog Bori.</span></li>
+<li><button class="play" onclick="say(this)" data-a="8b5b30aa84f4" data-en="The dog ran through the field.">▶</button><span class="sent">The dog ran through the field.</span></li>
+<li><button class="play" onclick="say(this)" data-a="2c96565ecf26" data-en="The sky turned orange.">▶</button><span class="sent">The sky turned orange.</span></li>
+<li><button class="play" onclick="say(this)" data-a="a25f4ff84871" data-en="Grandma cooked us a big dinner.">▶</button><span class="sent">Grandma cooked us a big dinner.</span></li>
+<li><button class="play" onclick="say(this)" data-a="dd4121bf9130" data-en="We washed the dishes together.">▶</button><span class="sent">We washed the dishes together.</span></li>
+<li><button class="play" onclick="say(this)" data-a="e5bb58aaf1e2" data-en="The long day made everyone sleepy.">▶</button><span class="sent">The long day made everyone sleepy.</span></li>
+<li><button class="play" onclick="say(this)" data-a="54c5ebbb3aa3" data-en="Grandpa lent me a warm blanket.">▶</button><span class="sent">Grandpa lent me a warm blanket.</span></li>
+<li><button class="play" onclick="say(this)" data-a="d69ba3feccc5" data-en="Everyone slept early.">▶</button><span class="sent">Everyone slept early.</span></li>
+</ol>
+<details><summary>채점한 뒤 들어 보세요 (정답 문장 2개)</summary>
+<ol class="list">
+<li><button class="play" onclick="say(this)" data-a="654e9e8fb9f3" data-en="Dad bought hot cocoa for us.">▶</button><span class="sent">Dad bought hot cocoa for us.</span></li>
+<li><button class="play" onclick="say(this)" data-a="89e4c1093a8b" data-en="The day made us happy.">▶</button><span class="sent">The day made us happy.</span></li>
+</ol></details>
+</section>
+<footer>중학 영문법 기초 시리즈 — 문장의 형식 (기본편·실전편)<br>
+소리가 안 나면 휴대폰 무음 스위치를 확인해 주세요.</footer>
+<script>
+/* 원어민 음성 mp3(사전 녹음)를 재생하고, 파일을 못 불러오면 기기 TTS로 대체한다 */
+var rate = 1.0, cur = null;
+var player = new Audio();
+function setRate(r, btn){
+  rate = r;
+  document.querySelectorAll('.rate button').forEach(function(b){ b.classList.remove('on'); });
+  btn.classList.add('on');
+}
+function done(){ if (cur) cur.classList.remove('on'); cur = null; }
+player.onended = done;
+player.onerror = function(){ if (cur) fallbackTTS(cur); };
+function say(btn){
+  speechSynthesis.cancel();
+  player.pause();
+  done();
+  cur = btn; btn.classList.add('on');
+  player.src = 'audio/' + btn.getAttribute('data-a') + '.mp3';
+  player.playbackRate = rate;
+  player.play().catch(function(){ fallbackTTS(btn); });
+}
+function fallbackTTS(btn){
+  var u = new SpeechSynthesisUtterance(btn.getAttribute('data-en'));
+  u.lang = 'en-US'; u.rate = rate * 0.95;
+  u.onend = done;
+  speechSynthesis.speak(u);
+}
+</script>
+</body>
+</html>
