@@ -31,6 +31,9 @@
   ol.list li { display:flex; align-items:center; gap:10px; padding:8px 10px;
                border-bottom:1px dashed #e2eae5; }
   ol.list li:last-child { border-bottom:none; }
+  ol.list li.playing { background:#fdf7ec; }
+  .whyempty { background:#fffdf7; border:1.5px dashed #c8891f; border-radius:10px;
+              padding:12px 14px; font-size:14px; color:#5a4a20; margin:0; line-height:1.7; }
   .play { flex:none; width:38px; height:38px; border-radius:50%; border:none; background:#1e5136;
           color:#fff; font-size:14px; }
   .play.on { background:#c8891f; }
@@ -49,6 +52,8 @@
   <div class="rate">
     빠르기:
     <button onclick="setRate(0.75,this)">느리게</button><button class="on" onclick="setRate(1.0,this)">보통</button>
+    &nbsp; 반복:
+    <button class="on" onclick="setRepeat(1,this)">1회</button><button onclick="setRepeat(3,this)">3회</button>
   </div>
 </header>
 <nav><b>세트:</b> <a href="#s1">1</a> <a href="#s2">2</a> <a href="#s3">3</a> <a href="#s4">4</a> <a href="#s5">5</a> <a href="#s6">6</a> <a href="#s7">7</a> <a href="#s8">8</a> <a href="#s9">9</a> <a href="#s10">10</a> <a href="#s11">11</a> <a href="#s12">12</a> <a href="#s13">13</a> <a href="#s14">14</a> <a href="#s15">15</a> <a href="#s16">16</a> <a href="#s17">17</a> <a href="#s18">18</a> <a href="#s19">19</a> <a href="#s20">20</a> <a href="#s21">21</a> <a href="#s22">22</a> <a href="#s23">23</a> <a href="#s24">24</a> <a href="#s25">25</a> <a href="#s26">26</a> <a href="#s27">27</a> <a href="#s28">28</a> <a href="#s29">29</a> <a href="#s30">30</a> <a href="#s31">31</a></nav>
@@ -73,7 +78,7 @@
 <li><button class="play" onclick="say(this)" data-a="87d723ab9bdb" data-en="My cat jumps.">▶</button><span class="sent">My cat jumps.</span></li>
 <li><button class="play" onclick="say(this)" data-a="afb8a8ba6bca" data-en="Dogs bark.">▶</button><span class="sent">Dogs bark.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="6c3790908cc7" data-en="A bird sings.">▶</button><span class="sent">A bird sings.</span></li>
 </ol></details>
@@ -99,7 +104,7 @@
 <li><button class="play" onclick="say(this)" data-a="6d98faca208c" data-en="Rain falls at night.">▶</button><span class="sent">Rain falls at night.</span></li>
 <li><button class="play" onclick="say(this)" data-a="d832c1a78b4b" data-en="The wind blows softly.">▶</button><span class="sent">The wind blows softly.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="d7415a8f724b" data-en="Birds fly in the sky.">▶</button><span class="sent">Birds fly in the sky.</span></li>
 </ol></details>
@@ -124,7 +129,7 @@
 <li><button class="play" onclick="say(this)" data-a="3ee95fa0c83b" data-en="My sister is a student.">▶</button><span class="sent">My sister is a student.</span></li>
 <li><button class="play" onclick="say(this)" data-a="9cf8c0ff4fd7" data-en="They are twins.">▶</button><span class="sent">They are twins.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="4f336935eafe" data-en="My uncle is a farmer.">▶</button><span class="sent">My uncle is a farmer.</span></li>
 </ol></details>
@@ -149,7 +154,7 @@
 <li><button class="play" onclick="say(this)" data-a="d30f093e1619" data-en="The flower looks pretty.">▶</button><span class="sent">The flower looks pretty.</span></li>
 <li><button class="play" onclick="say(this)" data-a="d5a380a99a79" data-en="The sky became dark.">▶</button><span class="sent">The sky became dark.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="3712385b8b44" data-en="The baby looks happy.">▶</button><span class="sent">The baby looks happy.</span></li>
 </ol></details>
@@ -174,7 +179,7 @@
 <li><button class="play" onclick="say(this)" data-a="f9c17201cfd7" data-en="She wants a doll.">▶</button><span class="sent">She wants a doll.</span></li>
 <li><button class="play" onclick="say(this)" data-a="99829a03e3fb" data-en="He opens the box.">▶</button><span class="sent">He opens the box.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="5b33f8ed87bd" data-en="They eat pizza.">▶</button><span class="sent">They eat pizza.</span></li>
 </ol></details>
@@ -200,7 +205,7 @@
 <li><button class="play" onclick="say(this)" data-a="679ed6662722" data-en="They watch TV in the evening.">▶</button><span class="sent">They watch TV in the evening.</span></li>
 <li><button class="play" onclick="say(this)" data-a="614b4fd730e6" data-en="I clean my desk every day.">▶</button><span class="sent">I clean my desk every day.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="a2a73b7f0b30" data-en="Mom buys apples.">▶</button><span class="sent">Mom buys apples.</span></li>
 </ol></details>
@@ -226,7 +231,7 @@
 <li><button class="play" onclick="say(this)" data-a="19f66b2c713a" data-en="Kids ride bikes.">▶</button><span class="sent">Kids ride bikes.</span></li>
 <li><button class="play" onclick="say(this)" data-a="a01aa55c15f3" data-en="Tom washes his hands.">▶</button><span class="sent">Tom washes his hands.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="b790aa40e042" data-en="She draws a picture.">▶</button><span class="sent">She draws a picture.</span></li>
 </ol></details>
@@ -248,7 +253,7 @@
 <li><button class="play" onclick="say(this)" data-a="a3f91e14a94b" data-en="Mom made us pizza.">▶</button><span class="sent">Mom made us pizza.</span></li>
 <li><button class="play" onclick="say(this)" data-a="9a2821ac7ea9" data-en="Dad gave me a watch.">▶</button><span class="sent">Dad gave me a watch.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="cb0abd7435de" data-en="She told us a story.">▶</button><span class="sent">She told us a story.</span></li>
 </ol></details>
@@ -272,7 +277,7 @@
 <li><button class="play" onclick="say(this)" data-a="6f48209b1269" data-en="She showed me her cat.">▶</button><span class="sent">She showed me her cat.</span></li>
 <li><button class="play" onclick="say(this)" data-a="1b58a2bfbbcd" data-en="I sent her flowers.">▶</button><span class="sent">I sent her flowers.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="8479ad4dee97" data-en="She brought me juice.">▶</button><span class="sent">She brought me juice.</span></li>
 </ol></details>
@@ -298,7 +303,7 @@
 <li><button class="play" onclick="say(this)" data-a="3363eedfe927" data-en="He lent us his car.">▶</button><span class="sent">He lent us his car.</span></li>
 <li><button class="play" onclick="say(this)" data-a="d218d4ea42d6" data-en="The clerk sold me a hat.">▶</button><span class="sent">The clerk sold me a hat.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="ea298fef6870" data-en="She taught us a song.">▶</button><span class="sent">She taught us a song.</span></li>
 </ol></details>
@@ -321,7 +326,7 @@
 <li><button class="play" onclick="say(this)" data-a="45d0d44b9e2d" data-en="They named the boat Star.">▶</button><span class="sent">They named the boat Star.</span></li>
 <li><button class="play" onclick="say(this)" data-a="43e13863071c" data-en="The class chose her leader.">▶</button><span class="sent">The class chose her leader.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="0ca01d40b914" data-en="She named the cat Tiger.">▶</button><span class="sent">She named the cat Tiger.</span></li>
 </ol></details>
@@ -344,7 +349,7 @@
 <li><button class="play" onclick="say(this)" data-a="51bf2df5e1b3" data-en="Music makes me sleepy.">▶</button><span class="sent">Music makes me sleepy.</span></li>
 <li><button class="play" onclick="say(this)" data-a="a7c430028597" data-en="The news made her sad.">▶</button><span class="sent">The news made her sad.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="35e9bbe555ef" data-en="He keeps the soup warm.">▶</button><span class="sent">He keeps the soup warm.</span></li>
 </ol></details>
@@ -366,7 +371,7 @@
 <li><button class="play" onclick="say(this)" data-a="5ba370f853d4" data-en="Good food makes us strong.">▶</button><span class="sent">Good food makes us strong.</span></li>
 <li><button class="play" onclick="say(this)" data-a="5f5348e15893" data-en="The movie made him bored.">▶</button><span class="sent">The movie made him bored.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="1878dba9125c" data-en="My friends call me Sunny.">▶</button><span class="sent">My friends call me Sunny.</span></li>
 </ol></details>
@@ -386,7 +391,7 @@
 <li><button class="play" onclick="say(this)" data-a="407a23bc0a22" data-en="Grandma made me a doll.">▶</button><span class="sent">Grandma made me a doll.</span></li>
 <li><button class="play" onclick="say(this)" data-a="7cef0cf07897" data-en="She showed him the map.">▶</button><span class="sent">She showed him the map.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 15개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 15개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="110d6c534e3d" data-en="She gave a book to me.">▶</button><span class="sent">She gave a book to me.</span></li>
 <li><button class="play" onclick="say(this)" data-a="b46a87683a21" data-en="He sent a letter to her.">▶</button><span class="sent">He sent a letter to her.</span></li>
@@ -428,7 +433,7 @@
 <li><button class="play" onclick="say(this)" data-a="453aad3be965" data-en="The tall boy runs fast.">▶</button><span class="sent">The tall boy runs fast.</span></li>
 <li><button class="play" onclick="say(this)" data-a="2c14ccd77a62" data-en="They found the movie boring.">▶</button><span class="sent">They found the movie boring.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="3362161e9196" data-en="My aunt is a nurse.">▶</button><span class="sent">My aunt is a nurse.</span></li>
 </ol></details>
@@ -456,7 +461,7 @@
 <li><button class="play" onclick="say(this)" data-a="6cae8eb52f9a" data-en="The old man walks slowly.">▶</button><span class="sent">The old man walks slowly.</span></li>
 <li><button class="play" onclick="say(this)" data-a="708494b09757" data-en="The coach made the team strong.">▶</button><span class="sent">The coach made the team strong.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="e2acdf421945" data-en="My brother opens the window.">▶</button><span class="sent">My brother opens the window.</span></li>
 </ol></details>
@@ -484,16 +489,15 @@
 <li><button class="play" onclick="say(this)" data-a="b2614d120d9b" data-en="On rainy days, the road looks dark.">▶</button><span class="sent">On rainy days, the road looks dark.</span></li>
 <li><button class="play" onclick="say(this)" data-a="dc979f7661b4" data-en="The heavy snow fell all night.">▶</button><span class="sent">The heavy snow fell all night.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="9faf867ab04a" data-en="My pen pal wrote me a letter.">▶</button><span class="sent">My pen pal wrote me a letter.</span></li>
 </ol></details>
 </section>
 <section id="s18">
 <h2><span class="setno">세트 18</span> 빈칸·품사 <span class="vol">실전편</span></h2>
-<ol class="list">
-</ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 20개)</summary>
+<p class="whyempty">이 세트는 <b>완성 문장이 곧 정답</b>이 될 수 있어요.<br>문제를 먼저 풀고 채점한 뒤, 아래 상자를 열어 들어 보세요. 👇</p>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 20개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="c1f2593781a7" data-en="I like apples .">▶</button><span class="sent">I like apples .</span></li>
 <li><button class="play" onclick="say(this)" data-a="209ca6d7ae66" data-en="The flower smells sweet .">▶</button><span class="sent">The flower smells sweet .</span></li>
@@ -539,7 +543,7 @@
 <li><button class="play" onclick="say(this)" data-a="c75d235bd02b" data-en="The chef made us a salad.">▶</button><span class="sent">The chef made us a salad.</span></li>
 <li><button class="play" onclick="say(this)" data-a="1dc866c3bae2" data-en="The joke made the baby laugh.">▶</button><span class="sent">The joke made the baby laugh.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 2개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 2개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="ffaf3efd0efb" data-en="He made a paper boat.">▶</button><span class="sent">He made a paper boat.</span></li>
 <li><button class="play" onclick="say(this)" data-a="b0dda7688c50" data-en="The letter made me sad.">▶</button><span class="sent">The letter made me sad.</span></li>
@@ -694,7 +698,7 @@
 <li><button class="play" onclick="say(this)" data-a="b28087476029" data-en="The bell rings loudly.">▶</button><span class="sent">The bell rings loudly.</span></li>
 <li><button class="play" onclick="say(this)" data-a="8effb0af34b1" data-en="She looks calm.">▶</button><span class="sent">She looks calm.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 4개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 4개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="0b87a038ce4b" data-en="The music sounds soft .">▶</button><span class="sent">The music sounds soft .</span></li>
 <li><button class="play" onclick="say(this)" data-a="18f0010a9016" data-en="The door closed softly .">▶</button><span class="sent">The door closed softly .</span></li>
@@ -729,9 +733,8 @@
 </section>
 <section id="s24">
 <h2><span class="setno">세트 24</span> 우리말에 맞는 문장 고르기 <span class="vol">실전편</span></h2>
-<ol class="list">
-</ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 20개)</summary>
+<p class="whyempty">이 세트는 <b>완성 문장이 곧 정답</b>이 될 수 있어요.<br>문제를 먼저 풀고 채점한 뒤, 아래 상자를 열어 들어 보세요. 👇</p>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 20개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="6513f1c2b338" data-en="We play badminton.">▶</button><span class="sent">We play badminton.</span></li>
 <li><button class="play" onclick="say(this)" data-a="bbf9a5d24899" data-en="He made me a cake.">▶</button><span class="sent">He made me a cake.</span></li>
@@ -778,7 +781,7 @@
 <li><button class="play" onclick="say(this)" data-a="2c4dc287429e" data-en="The coach got me ready.">▶</button><span class="sent">The coach got me ready.</span></li>
 <li><button class="play" onclick="say(this)" data-a="4a9ed950338a" data-en="He teaches us science.">▶</button><span class="sent">He teaches us science.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 2개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 2개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="8e0f66ef2914" data-en="He teaches science to us.">▶</button><span class="sent">He teaches science to us.</span></li>
 <li><button class="play" onclick="say(this)" data-a="5ada3e9f9709" data-en="I showed him a map.">▶</button><span class="sent">I showed him a map.</span></li>
@@ -809,7 +812,7 @@
 <li><button class="play" onclick="say(this)" data-a="90915652dcf9" data-en="They elected her captain.">▶</button><span class="sent">They elected her captain.</span></li>
 <li><button class="play" onclick="say(this)" data-a="aef47e88f1e1" data-en="Grandpa told us a secret.">▶</button><span class="sent">Grandpa told us a secret.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 2개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 2개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="82c4989bc40c" data-en="Grandpa told a secret to us.">▶</button><span class="sent">Grandpa told a secret to us.</span></li>
 <li><button class="play" onclick="say(this)" data-a="172d84499172" data-en="They named the baby Luna.">▶</button><span class="sent">They named the baby Luna.</span></li>
@@ -839,7 +842,7 @@
 <li><button class="play" onclick="say(this)" data-a="91002c76589f" data-en="The plan seems simple.">▶</button><span class="sent">The plan seems simple.</span></li>
 <li><button class="play" onclick="say(this)" data-a="2c4fca408984" data-en="She solved the problem.">▶</button><span class="sent">She solved the problem.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 2개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 2개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="5cac5e74da0f" data-en="He felt sad after the game.">▶</button><span class="sent">He felt sad after the game.</span></li>
 <li><button class="play" onclick="say(this)" data-a="c0876539b44c" data-en="The room became quiet.">▶</button><span class="sent">The room became quiet.</span></li>
@@ -847,9 +850,8 @@
 </section>
 <section id="s28">
 <h2><span class="setno">세트 28</span> 어법 <span class="vol">실전편</span></h2>
-<ol class="list">
-</ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 44개)</summary>
+<p class="whyempty">이 세트는 <b>완성 문장이 곧 정답</b>이 될 수 있어요.<br>문제를 먼저 풀고 채점한 뒤, 아래 상자를 열어 들어 보세요. 👇</p>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 44개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="0f459c89afeb" data-en="The dog barks loudly.">▶</button><span class="sent">The dog barks loudly.</span></li>
 <li><button class="play" onclick="say(this)" data-a="79bf3531a7b5" data-en="They named him a hero.">▶</button><span class="sent">They named him a hero.</span></li>
@@ -1025,7 +1027,7 @@
 <li><button class="play" onclick="say(this)" data-a="d3cb62894b49" data-en="After lunch, the small boy fell asleep on the sofa.">▶</button><span class="sent">After lunch, the small boy fell asleep on the sofa.</span></li>
 <li><button class="play" onclick="say(this)" data-a="11674436d361" data-en="She showed me her drawing.">▶</button><span class="sent">She showed me her drawing.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 1개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="038a76de9213" data-en="She showed her drawing to me.">▶</button><span class="sent">She showed her drawing to me.</span></li>
 </ol></details>
@@ -1069,7 +1071,7 @@
 <li><button class="play" onclick="say(this)" data-a="54c5ebbb3aa3" data-en="Grandpa lent me a warm blanket.">▶</button><span class="sent">Grandpa lent me a warm blanket.</span></li>
 <li><button class="play" onclick="say(this)" data-a="d69ba3feccc5" data-en="Everyone slept early.">▶</button><span class="sent">Everyone slept early.</span></li>
 </ol>
-<details><summary>채점한 뒤 들어 보세요 (정답 문장 2개)</summary>
+<details><summary>🔒 채점한 뒤 들어 보세요 (정답 문장 2개)</summary>
 <ol class="list">
 <li><button class="play" onclick="say(this)" data-a="654e9e8fb9f3" data-en="Dad bought hot cocoa for us.">▶</button><span class="sent">Dad bought hot cocoa for us.</span></li>
 <li><button class="play" onclick="say(this)" data-a="89e4c1093a8b" data-en="The day made us happy.">▶</button><span class="sent">The day made us happy.</span></li>
@@ -1079,21 +1081,33 @@
 소리가 안 나면 휴대폰 무음 스위치를 확인해 주세요.</footer>
 <script>
 /* 원어민 음성 mp3(사전 녹음)를 재생하고, 파일을 못 불러오면 기기 TTS로 대체한다 */
-var rate = 1.0, cur = null;
+var rate = 1.0, repeat = 1, left = 0, cur = null;
 var player = new Audio();
-function setRate(r, btn){
-  rate = r;
-  document.querySelectorAll('.rate button').forEach(function(b){ b.classList.remove('on'); });
+function pick(btn, group){
+  btn.parentNode.querySelectorAll('button').forEach(function(b){
+    if (b.textContent === group[0] || b.textContent === group[1]) b.classList.remove('on');
+  });
   btn.classList.add('on');
 }
-function done(){ if (cur) cur.classList.remove('on'); cur = null; }
-player.onended = done;
+function setRate(r, btn){ rate = r; pick(btn, ['느리게','보통']); }
+function setRepeat(n, btn){ repeat = n; pick(btn, ['1회','3회']); }
+function done(){
+  if (cur){ cur.classList.remove('on'); cur.parentNode.classList.remove('playing'); }
+  cur = null;
+}
+player.onended = function(){
+  if (left > 1 && cur){ left--; player.currentTime = 0;
+    setTimeout(function(){ player.play(); }, 500); }
+  else done();
+};
 player.onerror = function(){ if (cur) fallbackTTS(cur); };
 function say(btn){
   speechSynthesis.cancel();
   player.pause();
   done();
-  cur = btn; btn.classList.add('on');
+  cur = btn; left = repeat;
+  btn.classList.add('on');
+  btn.parentNode.classList.add('playing');
   player.src = 'audio/' + btn.getAttribute('data-a') + '.mp3';
   player.playbackRate = rate;
   player.play().catch(function(){ fallbackTTS(btn); });
